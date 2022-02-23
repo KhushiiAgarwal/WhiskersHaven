@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 16vh;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+.bar {
+    background-color: #dedede;
+    height: 16vh;
+}
+
+#name {
+    font-size: 5vh;
+    text-decoration: none;
+    text-align: center;
+    height: 16vh;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 0px;
+}
+
+#name a:link {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+#name a:visited {
+    color: darkgreen;
+}
+
+#name a:hover {
+    color: brown;
+}
+
+#name a:active {
+    color: red;
+}
+
+#subname {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#home {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 22px;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 3px;
+    width: 70vw;
+    font-size: 3vh;
+    column-gap: 2vw;
+    flex-wrap: wrap;
+    float: right;
+    margin-left: 10vw;
+}
+
+#home a:link {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+#home a:visited {
+    color: darkgreen;
+}
+
+#home a:hover {
+    color: brown;
+}
+
+#home a:active {
+    color: red;
+}
+
+.name {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    color: darkgreen;
+}
+
+.subinfo {
+    font-size: 20px;
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 25px;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    height: 8vh;
+    /* margin-top: 50px; */
+    padding: 5px 25px;
+    font-size: 25px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+footer a {
+    background-image: linear-gradient( to right, lime, 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:before {
+    content: '';
+    background: lime;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.main3 {
+    font-size: 3vh;
+    margin: 10px;
+    color: darkgreen;
+}
+
+#accessories {
+    font-size: 42px;
+    margin: 20px 0px 0px 40px;
+}
+
+.accessories {
+    padding: 23px;
+}
+
+.space {
+    margin-left: 30px;
+}
+
+.accsum {
+    padding: 20px;
+}
+
+.accsum::marker {
+    content: "💚 ";
+}
+
+.aboutus {
+    text-align: center;
+    font-size: 23px;
+    margin: 25px;
+    width: 75vw;
+    margin-left: 13vw;
+}
+
+.nonhu {
+    font-size: 20px;
+    color: darkcyan;
+    text-align: center;
+    margin: 25px;
+}
+
+.note {
+    font-size: 60;
+    color: red;
+    text-align: center;
+    margin: 25px;
+}
+
+.ava {
+    font-size: 42px;
+    text-align: center;
+    color: darkgreen;
+}
+
+.img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+    align-self: center;
+    padding: 12px;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.vol {
+    margin: 50px;
+    font-size: 20px;
+}
+
+.volhead {
+    color: mediumblue;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.volname {
+    color: forestgreen;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.volname a {
+    text-decoration: none;
+}
+
+.vollocation {
+    color: crimson;
+    font-size: 25px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("gala 4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif
+}
+
+.contact-box {
+    background-color: aliceblue;
+    display: flex;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.contact-left {
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    padding: 40px;
+    color: rgb(4, 37, 4);
+    background-color: rgb(18, 138, 138);
+}
+
+h1 {
+    margin: 30px;
+    color: rgb(3, 33, 59);
+    text-align: center;
+    background-color: aliceblue;
+    font-weight: 900;
+}
+
+p {
+    margin: 50px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.input-row .input-group {
+    flex-basis: 20%;
+}
+
+textarea {
+    width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    color: darkblue;
+}
+
+h3 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+button {
+    margin-top: 10px;
+    background-color: rgb(247, 186, 204);
+    width: 50px;
+    border-radius: 30%;
+}
+
+.contact-left h3 {
+    font-weight: 600;
+}
+
+.contact-right h3 {
+    color: aliceblue;
+    font-weight: 600;
+}
+
+table {
+    color: aliceblue;
+}
+
+tr td:first-child {
+    padding-right: 20px;
+}
+
+tr td {
+    padding-top: 30px;
+}
+
+.context {
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.context h3 {
+    color: aqua;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+
+.context h2 {
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.profiles {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+.profiles1 {
+    display: flex;
+    margin: 30px;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+section {
+    padding-left: 100px;
+    padding-right: 100px;
+}
