@@ -27,6 +27,7 @@
         justify-content: center;
         font-size: 2vh;
         width: 86vw;
+        margin-top: 8vh;
     }
     footer a:before {
         bottom: -1vh;
@@ -46,5 +47,27 @@
         align-content: center;
         justify-content: center;
         justify-items: center;
+    }
+    .img6 {
+        width: 90vw;
+        margin-bottom: 2vh;
+    }
+    .name {
+        margin-bottom: 4vh;
+    }
+    .subinfo {
+        margin: 10vw;
+    }
+    .hidden2 {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    .hidden3 {
+        display: none;
+    }
+    .hidden4 {
+        display: block;
     }
 }

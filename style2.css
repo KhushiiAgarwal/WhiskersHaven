@@ -179,13 +179,6 @@ a:hover::before {
     margin-left: 13vw;
 }
 
-.nonhu {
-    font-size: 20px;
-    color: darkcyan;
-    text-align: center;
-    margin: 25px;
-}
-
 .note {
     font-size: 60;
     color: red;
@@ -343,4 +336,33 @@ a:hover::before {
 .navbar {
     width: 50px;
     display: none;
+}
+
+.hidden2 {
+    display: none;
+}
+
+.hidden4 {
+    display: none;
+}
+
+.img7 {
+    margin: 2vh;
+}
+
+.img8 {
+    margin: 3vh 2vh;
+}
+
+.img9 {
+    margin: 2vh;
+}
+
+.img10 {
+    margin: 3vh;
+}
+
+.img11 {
+    margin-left: 25vw;
+    margin-bottom: 2.9vh;
 }

@@ -8,6 +8,9 @@
     .hidden {
         display: none;
     }
+    .hidden2 {
+        display: none;
+    }
     .navbar {
         display: flex;
         position: absolute;

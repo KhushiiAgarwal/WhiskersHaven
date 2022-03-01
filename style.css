@@ -303,3 +303,49 @@ textarea {
     margin: 2vh;
     font-size: 5vh;
 }
+
+.dropbtn2 {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    color: darkgreen;
+}
+
+.dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: relative;
+    right: 0px;
+    background-color: #dedede;
+}
+
+.dropdown-content2 a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #dedede;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+.dropdown2:hover .dropbtn {
+    background-color: darkgreen;
+    color: #dedede;
+}
+
+.show2 {
+    display: block;
+}
+
+.hidden2 {
+    display: none;
+}
