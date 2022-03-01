@@ -29,8 +29,8 @@
     .dropdown-content1 {
         display: none;
         position: relative;
-        top: 60px;
-        right: 160px;
+        top: 7vh;
+        right: 45vw;
         background-color: white;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
