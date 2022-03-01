@@ -30,11 +30,6 @@
     height: 12vh;
 }
 
-header {
-    height: 12vh;
-    padding: 0px 8px;
-}
-
 .bar {
     background-color: #dedede;
     height: 12vh;
@@ -129,6 +124,8 @@ main {
     font-size: 42px;
     text-align: center;
     color: darkgreen;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
 }
 
 .img {
@@ -140,6 +137,11 @@ main {
     padding: 12px;
     margin: 12px;
     cursor: pointer;
+}
+
+.img1 {
+    width: 400px;
+    height: 240px;
 }
 
 .info {
@@ -154,28 +156,42 @@ main {
 
 footer {
     display: flex;
-    justify-content: center;
     background-color: #333;
-    overflow: hidden;
-    text-align: center;
     height: 8vh;
-    margin: 0px;
+    padding: 5px 25px;
+    font-size: 25px;
+    justify-content: space-between;
+    align-content: space-between;
 }
 
 footer a {
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-    color: white;
+    background-image: linear-gradient( to right, lime, 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
 }
 
-.main2 {
-    display: flex;
-    height: 87vh;
-    margin: 25px 5px 5px 5px;
-    align-items: left;
-    align-self: center;
-    flex-direction: column;
+footer a:before {
+    content: '';
+    background: lime;
+    display: block;
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
 }
 
 input[type="text"],
@@ -196,65 +212,17 @@ textarea {
     text-decoration: none;
 }
 
-.main2 a:link {
-    text-decoration: none;
-    margin: 5px 15px 5px 0px;
-}
-
-.main2 a:hover {
-    color: royalblue;
-}
-
 .info a:hover {
     animation: name 2s infinite;
 }
 
-.n1 {
-    font-size: 32px;
-    margin: 20px 45px;
-}
-
-details {
-    padding: .5em .5em 0;
-}
-
-summary {
-    font-weight: bold;
-    margin: -.5em -.5em 0;
-    padding: .5em;
-}
-
-.main3 {
-    font-size: 3vh;
-    margin: 10px;
-}
-
-#accessories {
-    font-size: 42px;
-    color: royalblue;
-}
-
-::marker {
-    content: "💙 ";
-}
-
-.name {
-    font-size: 30px;
+.review1 {
     text-align: center;
-    margin: 20px;
+    font-size: 5vh;
+    margin-top: 3vh;
 }
 
-.subinfo {
-    font-size: 20px;
-    text-align: center;
-}
-
-.review {
-    text-align: center;
-    font-size: 3vh;
-}
-
-.review a {
+.review1 a {
     text-decoration: none;
 }
 
@@ -268,10 +236,11 @@ summary {
     text-align: center;
 }
 
-.nonhu {
+.review3 {
     font-size: 20px;
     color: darkcyan;
     text-align: center;
+    margin-bottom: 2vh;
 }
 
 .note {
@@ -280,13 +249,57 @@ summary {
     text-align: center;
 }
 
-@keyframes name {
-    from {
-        font-size: 20px;
-        width: auto;
-    }
-    to {
-        font-size: 300px;
-        width: 50vw;
-    }
+.dropbtn {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    color: darkgreen;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dedede;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkgreen;
+    color: #dedede;
+}
+
+.navbar {
+    width: 50px;
+    display: none;
+}
+
+.review2 {
+    font-size: 42px;
+    text-align: center;
+    color: darkgreen;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.yt {
+    margin: 2vh;
+    font-size: 5vh;
 }

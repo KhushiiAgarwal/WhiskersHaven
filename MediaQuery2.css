@@ -1,0 +1,60 @@
+@media screen and (max-width: 1000px) {
+    .hidden {
+        display: none;
+    }
+    #name {
+        width: auto;
+    }
+    #home {
+        width: auto;
+    }
+    .navbar {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+    .dropbtn1 {
+        background-color: #dedede;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 60px;
+    }
+    .dropbtn1:hover,
+    .dropbtn1:focus {
+        background-color: #c7c7c7;
+    }
+    .dropdown-content1 {
+        display: none;
+        position: relative;
+        top: 60px;
+        right: 160px;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .dropdown-content1 a {
+        padding: 12px 16px;
+        display: block;
+        position: relative;
+    }
+    .dropdown1 a:hover {
+        background-color: #ddd;
+    }
+    .show1 {
+        display: block;
+    }
+    .navbarIcon {
+        width: 60px;
+        height: 60px;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        position: relative;
+        right: 0px;
+    }
+}

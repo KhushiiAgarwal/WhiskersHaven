@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="MediaQuery2.css">
+    <link rel="stylesheet" href="Media4.css">
     <title>Volunteers</title>
 </head>
 
@@ -13,34 +15,55 @@
     <header>
         <div class="bar">
             <div id="name" class="top-left">
-                <a href="index.html">Vishwa Pet Care <br> 
-                <div id="subname"> You Are Here , Because You Care </div>
+                <a href=" index.html">Vishwa Pet Care <br> 
+                <div id="subname" class="hidden"> You Are Here , Because You Care </div>
                 </a>
                 <div id="home">
-                    <div>
-                        <a href="index.html"> Home </a>
+                    <div class="hidden">
+                        <a href=" index.html"> Home </a>
                     </div>
-                    <div>
-                        <a href="error.html">About pet Adoption</a>
+                    <div class="hidden">
+                        <a href=" error.html">About pet Adoption</a>
                     </div>
-                    <div>
-                        <a href="petCare.html">Pet care</a>
+                    <div class="dropdown">
+                        <a class="dropbtn hidden">Pet Care</a>
+                        <div class="dropdown-content">
+                            <a href=" petCare.html">Pet Diets</a>
+                            <a href=" accessories.html">Accessories</a>
+                            <a href=" disease.html">Diseases</a>
+                            <a href=" vaccine.html">Vaccines</a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="error.html">Shelter & Rescue</a>
+                    <div class="hidden">
+                        <a href=" error.html">Shelter & Rescue</a>
                     </div>
-                    <div>
-                        <a href="volunteers.html">Helping Pets</a>
+                    <div class="hidden">
+                        <a href=" volunteers.html">Helping Pets</a>
                     </div>
-                    <div>
-                        <a href="accessories.html">Accessories</a>
+                    <div class="hidden">
+                        <a href=" error.html">Videos/Images</a>
                     </div>
-                    <div>
-                        <a href="error.html">Videos/Images</a>
+                    <div class="dropdown1 navbar">
+                        <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg" alt=""></button>
+                        <div id="myDropdown1" class="dropdown-content1">
+                            <a href=" index.html">Home</a>
+                            <a href=" error.html">About pet Adoption</a>
+                            <div class="dropdown">
+                                <a class="dropbtn hidden">Pet Care</a>
+                                <div class="dropdown-content">
+                                    <a href=" petCare.html">Pet Diets</a>
+                                    <a href=" accessories.html">Accessories</a>
+                                    <a href=" disease.html">Diseases</a>
+                                    <a href=" vaccine.html">Vaccines</a>
+                                </div>
+                            </div>
+                            <a href=" error.html">Shelter & Rescue</a>
+                            <a href=" volunteers.html">Helping Pets</a>
+                            <a href=" error.html">Videos/Images</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <div class="vol">
         <p class="volhead">VOLUNTEER PROJECTS HELPING STREET ANIMALS
@@ -141,6 +164,8 @@
     <a href="aboutus.html">About Us</a>
     <a href="#">&copy; 2022 | VishwaPetCare</a>
 </footer>
+
+<script src="navbar.js"></script>
 </body>
 
 </html>

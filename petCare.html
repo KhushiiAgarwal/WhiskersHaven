@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Care</title>
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="MediaQuery2.css">
+    <link rel="stylesheet" href="Media4.css">
 
 </head>
 
@@ -14,34 +16,55 @@
     <header>
         <div class="bar">
             <div id="name" class="top-left">
-                <a href="index.html">Vishwa Pet Care <br> 
-                <div id="subname"> You Are Here , Because You Care </div>
+                <a href=" index.html">Vishwa Pet Care <br> 
+                <div id="subname" class="hidden"> You Are Here , Because You Care </div>
                 </a>
                 <div id="home">
-                    <div>
-                        <a href="index.html"> Home </a>
+                    <div class="hidden">
+                        <a href=" index.html"> Home </a>
                     </div>
-                    <div>
-                        <a href="error.html">About pet Adoption</a>
+                    <div class="hidden">
+                        <a href=" error.html">About pet Adoption</a>
                     </div>
-                    <div>
-                        <a href="petCare.html">Pet care</a>
+                    <div class="dropdown">
+                        <a class="dropbtn hidden">Pet Care</a>
+                        <div class="dropdown-content">
+                            <a href=" petCare.html">Pet Diets</a>
+                            <a href=" accessories.html">Accessories</a>
+                            <a href=" disease.html">Diseases</a>
+                            <a href=" vaccine.html">Vaccines</a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="error.html">Shelter & Rescue</a>
+                    <div class="hidden">
+                        <a href=" error.html">Shelter & Rescue</a>
                     </div>
-                    <div>
-                        <a href="volunteers.html">Helping Pets</a>
+                    <div class="hidden">
+                        <a href=" volunteers.html">Helping Pets</a>
                     </div>
-                    <div>
-                        <a href="accessories.html">Accessories</a>
+                    <div class="hidden">
+                        <a href=" error.html">Videos/Images</a>
                     </div>
-                    <div>
-                        <a href="error.html">Videos/Images</a>
+                    <div class="dropdown1 navbar">
+                        <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg" alt=""></button>
+                        <div id="myDropdown1" class="dropdown-content1">
+                            <a href=" index.html">Home</a>
+                            <a href=" error.html">About pet Adoption</a>
+                            <div class="dropdown">
+                                <a class="dropbtn hidden">Pet Care</a>
+                                <div class="dropdown-content">
+                                    <a href=" petCare.html">Pet Diets</a>
+                                    <a href=" accessories.html">Accessories</a>
+                                    <a href=" disease.html">Diseases</a>
+                                    <a href=" vaccine.html">Vaccines</a>
+                                </div>
+                            </div>
+                            <a href=" error.html">Shelter & Rescue</a>
+                            <a href=" volunteers.html">Helping Pets</a>
+                            <a href=" error.html">Videos/Images</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </header>
     <div class="main3">
         <div id="accessories">
@@ -52,128 +75,73 @@
                 <details>
                     <summary class="accsum">Dogs
                     </summary>
-
                     <details>
+                        <summary class="accsum space">Puppies</summary>
                         <p>
-                            <summary class="accsum space">Puppies</summary>
-                        </p>
-                        <p>
-                            Biological differences are the sole reason for a puppy to be fed a puppy diet, and there are no two ways about it. If you want a healthy puppy that grows into a healthy adult, feeding him/her nutritious puppy food is vital.
-                        </p>
-                        <p>
-                            A puppy needs around 22.5% of calories from protein to grow well. Less calories intake can lead to developmental problems in puppies - weak bones, cardiovascular problems, neuromuscular disorders and so on
-                        </p>
-                        <p>
-                            `Protein` in puppy food is actually a bag of essential amino acids that is required for good mental and physical well-being. Protein is not all that is different in puppy food. Puppies need more fat in their diet, too - 8.5%. Lastly, and most importantly,
-                            is the requirement of calcium and other essential minerals that aid the growth of a strong skeletal, muscular, and nervous system. Puppies need 1% of calcium to meet their growth requirements.
-                        </p>
-                        <p>
-                            Choosing good quality puppy food that uses the finest quality ingredients is essential in helping your little buddy grow into a robust and healthy adult.
+                            Biological differences are the sole reason for a puppy to be fed a puppy diet, and there are no two ways about it. If you want a healthy puppy that grows into a healthy adult, feeding him/her nutritious puppy food is vital.<br>                            A puppy needs around 22.5% of calories from protein to grow well. Less calories intake can lead to developmental problems in puppies - weak bones, cardiovascular problems, neuromuscular disorders and so on.<br> `Protein` in
+                            puppy food is actually a bag of essential amino acids that is required for good mental and physical well-being. Protein is not all that is different in puppy food. Puppies need more fat in their diet, too - 8.5%. Lastly, and
+                            most importantly, is the requirement of calcium and other essential minerals that aid the growth of a strong skeletal, muscular, and nervous system. Puppies need 1% of calcium to meet their growth requirements.<br> Choosing
+                            good quality puppy food that uses the finest quality ingredients is essential in helping your little buddy grow into a robust and healthy adult.
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum  space">Adult Dogs</summary>
-                        </p>
+                        <summary class="accsum  space">Adult Dogs</summary>
                         <p>
                             When adult dogs consume puppy food regularly after achieving their fullest height and weight, their bodies receive an excess of protein, fat, and calories. The concern with this is weight gain. When a dog`s body doesn`t need so many calories, it begins
-                            to store them in the form of fat.</p>
-                        <p>
-                            Besides, your dog is also predisposed to diabetes, arthritis, and immobility. An adult dog food`s primary goal is the maintenance of a healthy body. It has just the right amount of vitamins, minerals, proteins, and fats to keep your dog`s mental and physical
-                            health under control. Most adult dog food is breed-specific. They are tailored to meet breed-specific nutritional requirements adequately. If you still think that your dog needs a higher proportion of vitamins and minerals
-                            in his diet, feed him supplements instead of puppy food.</p>
-                        <p>
-                            Supplements are a way of feeding all the goodness of puppy food minus the adverse effects of excess calories and fat. Whether you choose an adult dog food that is universal or breed-specific, make sure that it is of good quality. Never settle for a commercial
-                            diet that uses lower quality ingredients because this tends to have an adverse effect on your dog`s health in the long run, especially when he touches eight years old.
+                            to store them in the form of fat.<br> Besides, your dog is also predisposed to diabetes, arthritis, and immobility. An adult dog food`s primary goal is the maintenance of a healthy body. It has just
+                            the right amount of vitamins, minerals, proteins, and fats to keep your dog`s mental and physical health under control. Most adult dog food is breed-specific. They are tailored to meet breed-specific nutritional requirements
+                            adequately. If you still think that your dog needs a higher proportion of vitamins and minerals in his diet, feed him supplements instead of puppy food.<br> Supplements are a way of feeding all the goodness of puppy food minus
+                            the adverse effects of excess calories and fat. Whether you choose an adult dog food that is universal or breed-specific, make sure that it is of good quality. Never settle for a commercial diet that uses lower quality ingredients
+                            because this tends to have an adverse effect on your dog`s health in the long run, especially when he touches eight years old.
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum  space">Senior Dogs</summary>
-                        </p>
-
+                        <summary class="accsum  space">Senior Dogs</summary>
                         <p>
                             The most neglected diet is that for a senior dog. Small breeds `grow old` much slower than medium and large breeds - a seven-year-old Yorkie isn`t as old as a seven-year-old Great Dane. `Old age` for a small breed is roughly at ten; seven or eight for
-                            a medium breed; and seven for a large breed.
-                        </p>
-                        <p>
-                            As a dog`s body ages, it loses its ability to fight infections, repair wounds, and maintain normal body functioning. Because of this, their health and endurance begin to decline. For this, they need food that helps them fight infections and inflammations,
-                            i.e. a diet rich in fibre, antioxidants, protein, and fat. Their diet also needs supplements, prebiotics, and probiotics to fight problems of organ diseases. If your dog has or is prone to certain diseases, your veterinarian
-                            can prescribe a diet meant for her condition. Most senior dog diets are tailored to provide a feeling of satiety - they have a higher percentage of fibre in comparison to fat (8%). This is done to prevent obesity and its subsequent
-                            problems since a senior dog does not exercise as much as adult dogs.
+                            a medium breed; and seven for a large breed. <br> As a dog`s body ages, it loses its ability to fight infections, repair wounds, and maintain normal body functioning. Because of this, their health
+                            and endurance begin to decline. For this, they need food that helps them fight infections and inflammations, i.e. a diet rich in fibre, antioxidants, protein, and fat. Their diet also needs supplements, prebiotics, and probiotics
+                            to fight problems of organ diseases. If your dog has or is prone to certain diseases, your veterinarian can prescribe a diet meant for her condition. Most senior dog diets are tailored to provide a feeling of satiety - they
+                            have a higher percentage of fibre in comparison to fat (8%). This is done to prevent obesity and its subsequent problems since a senior dog does not exercise as much as adult dogs.
                         </p>
                     </details>
                 </details>
-
                 <details>
                     <summary class="accsum">Cats
                     </summary>
-
                     <details>
-                        <p>
-                            <summary class="accsum  space">Kittens</summary>
-                        </p>
-
+                        <summary class="accsum  space">Kittens</summary>
                         <p>
                             Kittens start to become interested in eating solid food at around 3 to 4 weeks old. You would start out by offering small amounts of canned food mixed with water to make it very soft, and then gradually add less water as the kitten grows. Once they`re
                             eating solid food you can then add in some dry, again in small amounts initially, and soaking it in water can help them eat it.Once kittens have fully weaned from their mother`s milk, the correct amount to feed them becomes
-                            the responsibility of the humans in the house.
-                        </p>
-
-                        <p>
-                            Kittens should eat about one-half to one cup of dry kitten food or six to nine ounces of wet kitten food per day, divided into at least three meals. Kittens need additional calories, protein, healthy fats and minerals such as calcium and phosphorus to
-                            allow for growth and healthy musculoskeletal development.
+                            the responsibility of the humans in the house. <br> Kittens should eat about one-half to one cup of dry kitten food or six to nine ounces of wet kitten food per day, divided into at least three meals.
+                            Kittens need additional calories, protein, healthy fats and minerals such as calcium and phosphorus to allow for growth and healthy musculoskeletal development.
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum  space">Adult (1 year—7 years)</summary>
-                        </p>
-
+                        <summary class="accsum  space">Adult (1 year—7 years)</summary>
                         <p>When to feed kittens adult food depends on when they reach maturity—usually at around 1 year old, although some larger cat breeds have a longer growth period and may still need to eat kitten food until they are 18 to 23 months
-                            old. Thus, you should consult your own veterinary when determining your cat`s maturity.</p>
-
-                        <p>growth period and may still need to eat kitten food until they are 18 to 23 months old. Thus, you should consult your own veterinary when determining your cat`s maturity.</p>
-
-                        <p>
-                            The amount to feed an adult cat depends on many factors, all of which influence caloric requirements including: Activity level, Metabolism, Body size.
-                        </p>
-
-                        <p>
-                            Mature cats should be feed only twice a day ,continuing to feed an increased calorie count past this period can result in obesity.
-                        </p>
+                            old. Thus, you should consult your own veterinary when determining your cat`s maturity.<br>
+                            <p class="space">growth period and may still need to eat kitten food until they are 18 to 23 months old. Thus, you should consult your own veterinary when determining your cat`s maturity. <br> The amount to feed an adult cat depends on many
+                                factors, all of which influence caloric requirements including: Activity level, Metabolism, Body size. <br> Mature cats should be feed only twice a day ,continuing to feed an increased calorie count past this period can
+                                result in obesity.
+                            </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum  space">Senior (7 years—10 and above)</summary>
-                        </p>
-
+                        <summary class="accsum  space">Senior (7 years—10 and above)</summary>
                         <p>
                             Diets for senior cats tend to have a lower caloric content but still include the ideal amounts of vitamins and nutrients for a maturing feline body. Look for options with essential nutrients and fewer calories, like Halo Holistic chicken and chicken liver
-                            grain-free senior dry cat food.
-                        </p>
-
-                        <p>
-                            We consider cats to be seniors at around 7 to 10 years of age. Even though some cats are still feisty and young-at-heart until several years later, internally, their bodies can go through certain changes at this age that make them more prone to gaining
-                            weight or developing arthritis and other health conditions. So, a senior diet is usually best. But there are exceptions, especially if your cat has food sensitivities or needs a prescription diet. Your veterinarian can help
-                            guide you through this decision.
+                            grain-free senior dry cat food. <br> We consider cats to be seniors at around 7 to 10 years of age. Even though some cats are still feisty and young-at-heart until several years later, internally,
+                            their bodies can go through certain changes at this age that make them more prone to gaining weight or developing arthritis and other health conditions. So, a senior diet is usually best. But there are exceptions, especially
+                            if your cat has food sensitivities or needs a prescription diet. Your veterinarian can help guide you through this decision.
                         </p>
                     </details>
                 </details>
-
                 <details>
                     <summary class="accsum ">Rabbit
                     </summary>
-
                     <details>
-                        <p>
-                            <summary class="accsum  space">Baby bunnies</summary>
-                        </p>
-
+                        <summary class="accsum  space">Baby bunnies</summary>
                         <p>
                             Young kits are quire easy to care for, and only feed on their mother`s milk for the first three weeks. The first couple days after birth, their mama`s milk will have high levels of antibodies that`ll help protect the young rabbit from diseases. It`s important
                             that you don`t separate the kit from its mother at this stage. After three weeks, the baby can be given some alfalfa hay and pellets. It`ll take them some time to get used to it, so don`t worry if they seem to eat very little
@@ -181,12 +149,8 @@
                             weaned means that the baby will be able to eat food other than its mother`s milk
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum space">Juvenile rabbits</summary>
-                        </p>
-
+                        <summary class="accsum space">Juvenile rabbits</summary>
                         <p>
                             You can give juveniles access to unlimited alfalfa hay and pellets. When your bunny is three months old, you can start introducing veggies to its diet. Vegetables have lots of nutrients, plus they`ll help diversify your bun`s diet and make their digestive
                             system stronger. Hold off on fruits, however. They`re too sugary and can cause digestive problems. You can give them leafy greens like watercress, parsley, collard greens and spinach (in small quantities, spinach has high oxalates
@@ -195,11 +159,8 @@
                             they show any signs of distress or an upset stomach like gas, bloating, pain, odd behavior, diarrhea, reduced appetite, avoid giving them that vegetable in the future. If your pet seems seriously ill, take them to the vet immediately
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum space">Young adults</summary>
-                        </p>
+                        <summary class="accsum space">Young adults</summary>
                         <p>
                             Introduce the rabbit to timothy, grass hays and oat hay which should be available throughout the day. Hay contains fiber, which bunnies need to digest food properly. Young adults don`t need as much alfalfa hay or pellets, because they`re high in nutrients
                             and calories, and rabbits don`t need large amounts of either once they`re young adults. Restrict their pellet intake to around half a cup of pellets per 6 lbs of body weight daily. You can give your pet some more rabbit safe
@@ -207,186 +168,109 @@
                             also upset the rabbits sensitive digestive system. The general rule is to have 85% of their diet be pellets and hay, and 10-15% can be fruits and veggies, with the focus being strongly on healthy veggies
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum space">Adult rabbits</summary>
-                        </p>
-
-                        <p>
+                        <summary class="accsum space">Adult rabbits</summary>
+                        <p class="space">
                             Adult rabbits should have unlimited access to timothy, grass hay and oat hay. You should further cut back their pellet intake to one-fourth of a cup per 6 lbs. of body weight daily, or half the amount you were giving them as young adults. You can further
                             increase their vegetable intake up to two cups per 6 lbs. of body weight daily. Bear in mind, however, that when we say vegetables, we mean dark green, leafy veggies. Others can be given occasionally as treats and to diversify
                             their diet, as long as they`re non-toxic. You can also give them dark orange and yellow vegetables. You can find safe foods in the rabbit food section here, or run a search for rabbit foods on Google. Fruits should be given
                             in small quantities, as rewards for good behavior
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum space">Senior rabbits</summary>
-                        </p>
-
-                        <p>
+                        <summary class="accsum space">Senior rabbits</summary>
+                        <p class="space">
                             Elderly rabbits start to have digestive and weight loss problems, so you need to be a little more careful about what you give them. They may be used to getting sweet sugary treats and therefore demand them, but if you find your pet having digestive issues
                             following treats, you know you need to cut back. Generally, senior rabbits can be fed the same as adult rabbits, but if they have weight loss problems you may need to give them more pellets. Sometimes, vets even recommend giving
                             sugary foods such as sweet potatoes and carrots to help with the problem. In other cases, bunnies who have low, or even normal calcium levels, may be given alfalfa hay to help with the weight issue. We recommend consulting
-                            a vet about this before making a decision.
-                        </p>
-
-                        <p>
-                            This guide will help you ensure your pet`s nutritional needs are met as they grow older. For information about specific foods or the most common rabbit breeds, take a look at our other rabbit articles. If you need immediate assistance, contact your local
-                            veterinarian. We recommend finding someone who deals with rabbits and storing their number on your phone for quick access
+                            a vet about this before making a decision.<br> This guide will help you ensure your pet`s nutritional needs are met as they grow older. For information about specific foods or the most common rabbit
+                            breeds, take a look at our other rabbit articles. If you need immediate assistance, contact your local veterinarian. We recommend finding someone who deals with rabbits and storing their number on your phone for quick access
                         </p>
                     </details>
                 </details>
-
                 <details>
                     <summary class="accsum">Cows
                     </summary>
-
-                    <p>
+                    <p class="space">
                         Cows eat grass and hay. On a dry matter basis a cow will eat 4 to 5 tons of forage per year. As long as there is pasture for the cows to eat it is most economical to let them graze. When cattle are on grass the amount of forage consumed will determine
                         how well they will perform, usually expressed in average daily gain (ADG). Growing beef cattle will consume approximately 2.5 percent of their body weight each day depending on forage conditions. It requires approximately 8 to
-                        10 pounds of roughage for every pound of gain.
-                    </p>
-
-                    <p>
-                        If possible, the hay should be 8% crude protein or higher. It is a good idea to test the protein value of your hay through local laboratories.
-                    </p>
-
-                    <p>
-                        The bacteria will provide much of the protein the cow needs. There are literally billions of tiny bacteria in the rumen. When we feed a cow we are really feeding the bacteria so that they can do their job.
-                    </p>
-
-                    <p>
-                        If cattle are confined, all nutrients required for growth and production must be supplied. Normally growing cattle over 700 pounds will need to receive rations relatively high in concentrates to gain faster. The concentrate should be processed for maximum
-                        benefit to the animal.
-                    </p>
-
-                    <p>
-                        Supplements containing vitamins, minerals and protein (depending on what they are getting from the for-age) are recommended.
+                        10 pounds of roughage for every pound of gain.<br> If possible, the hay should be 8% crude protein or higher. It is a good idea to test the protein value of your hay through local laboratories.<br> The bacteria
+                        will provide much of the protein the cow needs. There are literally billions of tiny bacteria in the rumen. When we feed a cow we are really feeding the bacteria so that they can do their job.<br> If cattle are confined, all nutrients
+                        required for growth and production must be supplied. Normally growing cattle over 700 pounds will need to receive rations relatively high in concentrates to gain faster. The concentrate should be processed for maximum benefit to
+                        the animal.
+                        <br> Supplements containing vitamins, minerals and protein (depending on what they are getting from the for-age) are recommended.
                     </p>
                 </details>
-
                 <details>
                     <summary class="accsum">Buffalo
                     </summary>
-
                     <p>
                         Even though they can be quite vicious, these animals are herbivores and eat only plants. They are grazers, which eat grass, rather than browsers, which eat leaves and shrubs.
-                    </p>
-
-                    <p>
-                        Like other members of the Bovidae family, when these animals eat their grassy diet, they regurgitate it later to chew a second time. This process, called “chewing cud,” helps them fully digest the grass. Generally, they spend a few hours grazing, find
-                        a shady spot during the hottest time of the day to rest and chew their cud, then resume grazing.
+                        <br> Like other members of the Bovidae family, when these animals eat their grassy diet, they regurgitate it later to chew a second time. This process, called “chewing cud,” helps them fully digest the grass. Generally, they spend
+                        a few hours grazing, find a shady spot during the hottest time of the day to rest and chew their cud, then resume grazing.
                     </p>
                 </details>
-
                 <details>
                     <summary class="accsum">Mice
                     </summary>
-
                     <p>
                         Mice should be fed a combination of ad lib fresh fruits and vegetables and small amounts of good quality mouse/rat pellets or cubes (ensure they have a protein content of at least 16% & fat content of 4-5%).
-                    </p>
-
-                    <p>
-                        Some examples of fruit and vegetables include: apples, pears, banana, melons, stone fruits, citrus fruits, broccoli, cabbage, brussel sprouts, endive, carrots, Bok Choy/other Asian greens, celery, parsley, berries, tomato, fresh corn, beans, peas.
-                    </p>
-
-                    <p>
-                        Mice should be fed a combination of ad lib fresh fruits and vegetables and small amounts of good quality mouse/rat pellets or cubes (ensure they have a protein content of at least 16% & fat content of 4-5%).
-                    </p>
-
-                    <p>
-                        Please ensure that any changes to the diet are made gradually to avoid gastrointestinal upset.
+                        <br> Some examples of fruit and vegetables include: apples, pears, banana, melons, stone fruits, citrus fruits, broccoli, cabbage, brussel sprouts, endive, carrots, Bok Choy/other Asian greens, celery, parsley, berries, tomato,
+                        fresh corn, beans, peas.
+                        <br> Mice should be fed a combination of ad lib fresh fruits and vegetables and small amounts of good quality mouse/rat pellets or cubes (ensure they have a protein content of at least 16% & fat content of 4-5%). <br> Please ensure
+                        that any changes to the diet are made gradually to avoid gastrointestinal upset.
                     </p>
                 </details>
-
                 <details>
                     <summary class="accsum">Guinea Pigs
                     </summary>
-
-                    <p>
-                        At the most basic level, guinea pigs are herbivores. That means they just eat fruits and veggies—no dairy, eggs, meat, or insects for these little guys. Fresh hay and fresh leafy vegetables should make up the bulk of your guinea pig`s diet. </p>
-
-                    <p>
-                        Any guinea pig owner needs to keep two important things in mind when choosing food: Vitamin C, Constant-Growing Teeth. They munch on hay and veggies all day. That means it`s important to keep fresh hay available constantly.
-                    </p>
-
-                    <p>
-                        Fresh fruits and veggies are great treats and supplements for your guinea pig. Good fresh foods to feed your guinea pig include: Bananas, Blueberries, Cantaloupe, Green peppers, Parsley, Green and red leaf lettuce, Strawberries, Tomatoes, Watermelon.
-                        Offer your guinea pig more vegetables than fruits. She might love fruits, but they`re like candy for guinea pigs.
+                    <p class="space">
+                        At the most basic level, guinea pigs are herbivores. That means they just eat fruits and veggies—no dairy, eggs, meat, or insects for these little guys. Fresh hay and fresh leafy vegetables should make up the bulk of your guinea pig`s diet. <br>                        Any guinea pig owner needs to keep two important things in mind when choosing food: Vitamin C, Constant-Growing Teeth. They munch on hay and veggies all day. That means it`s important to keep fresh hay available constantly. <br>                        Fresh fruits and veggies are great treats and supplements for your guinea pig. Good fresh foods to feed your guinea pig include: Bananas, Blueberries, Cantaloupe, Green peppers, Parsley, Green and red leaf lettuce, Strawberries,
+                        Tomatoes, Watermelon. Offer your guinea pig more vegetables than fruits. She might love fruits, but they`re like candy for guinea pigs.
                     </p>
                 </details>
-
                 <details>
                     <summary class="accsum">Horses
                     </summary>
-
                     <p>
-                        Forty-five to 72 hours is required for food to completely pass through the digestive tract of the horse. It is recommended that the diet contain no less than 1 percent of body weight of roughage such as hay, pasture, etc.</p>
-
-                    <p>
-                        A horse requires five types of nutrients. • Energy nutrients (such as carbohydrates and fats), • Proteins- Protein supplements are oilseed meals, soybeans, cottonseed, linseed (flaxseed) meal, peanut meal, sunflower seed meal and rapeseed (canola). •
-                        Vitamins- Vitamin E is a potent antioxidant that must be supplied in the diet because horses can not make it in their bodies. It is found in fresh grass and forages. • Minerals -Minerals of concern in feeding horses are calcium,
-                        phosphorus and salt. In some geographical areas, lack of selenium and, in growing horses, copper and zinc, is a concern. Calcium and phosphorous should be fed in a ratio that ranges from 3:1 to 1:1. • Water-A horse drinks about
-                        10 to 12 gallons of water daily depending on the work it is doing. In hot weather, a horse may drink up to 15 to 20 gallons of water. In very cold weather, water heaters may be needed to prevent the water from freezing. • Always
-                        maintain at least half of the ration as roughage, such as hay or grass • General daily feed required for the average adult 1,000-pound horse in good body condition and health
+                        Forty-five to 72 hours is required for food to completely pass through the digestive tract of the horse. It is recommended that the diet contain no less than 1 percent of body weight of roughage such as hay, pasture, etc. <br>                        A horse requires five types of nutrients. • Energy nutrients (such as carbohydrates and fats), • Proteins- Protein supplements are oilseed meals, soybeans, cottonseed, linseed (flaxseed) meal, peanut meal, sunflower seed meal and
+                        rapeseed (canola). • Vitamins- Vitamin E is a potent antioxidant that must be supplied in the diet because horses can not make it in their bodies. It is found in fresh grass and forages. • Minerals -Minerals of concern in feeding
+                        horses are calcium, phosphorus and salt. In some geographical areas, lack of selenium and, in growing horses, copper and zinc, is a concern. Calcium and phosphorous should be fed in a ratio that ranges from 3:1 to 1:1. • Water-A
+                        horse drinks about 10 to 12 gallons of water daily depending on the work it is doing. In hot weather, a horse may drink up to 15 to 20 gallons of water. In very cold weather, water heaters may be needed to prevent the water from
+                        freezing. • Always maintain at least half of the ration as roughage, such as hay or grass • General daily feed required for the average adult 1,000-pound horse in good body condition and health
                     </p>
                 </details>
-
                 <details>
                     <summary class="accsum">Fish
                     </summary>
-
                     <details>
-                        <p>
-                            <summary class="accsum space">Carnivores</summary>
-                        </p>
-
+                        <summary class="accsum space">Carnivores</summary>
                         <p>
                             Carnivorous require a protein-rich diet, consisting of plenty of meat in either live or dead form. Species include Piranhas, Cichlids, Arowanas, Bettas, Killifish, and Pipefish. A carnivore`s diet should be made up of 45% to 70% protein, some fats to
                             insulate the body, and small amounts of carbohydrates to provide energy.
                             <br> Carnivorous fish cannot handle or digest large amounts of carbohydrates and so the small amounts of plant matter that they eat will suffice. To replicate this in your aquarium, you can offer your fish a variety of live
                             and frozen foods.
-
-                        </p>
-
-                        <p>
-                            Recommended Foods Insects - Blood worms, white worms, tubifex worms and micro worms are available in live and frozen forms and provide good amounts of protein. Fish - You can feed your fish a mixture of live, frozen and cooked fish. Most meats are not
-                            suitable for your fish because they are high in fat, however you can feed them beefheart which isn`t as fatty once trimmed - just don`t feed this in excess! Other Live Foods - Brine shrimp is one of the best live foods you
-                            can feed your fish. Whilst live shrimps can be expensive, frozen brine shrimp is more affordable. Dried Foods and Supplements - You can also feed your carnivorous fish a number of dried foods and supplements; you can read more
-                            about this in the omnivore section below.
+                            <br> Recommended Foods Insects - Blood worms, white worms, tubifex worms and micro worms are available in live and frozen forms and provide good amounts of protein. Fish - You can feed your fish a mixture of live, frozen and
+                            cooked fish. Most meats are not suitable for your fish because they are high in fat, however you can feed them beefheart which isn`t as fatty once trimmed - just don`t feed this in excess! Other Live Foods - Brine shrimp is
+                            one of the best live foods you can feed your fish. Whilst live shrimps can be expensive, frozen brine shrimp is more affordable. Dried Foods and Supplements - You can also feed your carnivorous fish a number of dried foods
+                            and supplements; you can read more about this in the omnivore section below.
                         </p>
                     </details>
-
                     <details>
-                        <p>
-                            <summary class="accsum space">Herbivores</summary>
-                        </p>
-
+                        <summary class="accsum space">Herbivores</summary>
                         <p>
                             Herbivores such as Carp, White amur only consume plant matter. A herbivorous fish`s diet consists of plants, algae, vegetables, and fruits. In the wild, herbivorous fish will graze on plants, algae and other vegetable matter. There are actually very few
-                            true herbivorous fish; most fish need at least a small amount of meat protein.</p>
-                        <p>
-                            Recommended Foods Plants and Algae - Placing a number of live plants and algae in your tank is a good start for feeding your fish but you shouldn`t rely on these two options alone. Vegetables and Fruit - You can feed your fish blanched vegetables such
-                            as zucchini, peas, lettuce, and spinach and fruits like apple ,pears. Supplements and Dried Foods - Herbivores also need a number of supplements; you can see the section below on omnivores to learn more about this.
+                            true herbivorous fish; most fish need at least a small amount of meat protein. <br> Recommended Foods Plants and Algae - Placing a number of live plants and algae in your tank is a good start for
+                            feeding your fish but you shouldn`t rely on these two options alone. Vegetables and Fruit - You can feed your fish blanched vegetables such as zucchini, peas, lettuce, and spinach and fruits like apple ,pears. Supplements and
+                            Dried Foods - Herbivores also need a number of supplements; you can see the section below on omnivores to learn more about this.
                         </p>
                     </details>
-
                     <details>
+                        <summary class="accsum space">Omnivores</summary>
                         <p>
-                            <summary class="accsum space">Omnivores</summary>
-                        </p>
-
-                        <p>
-                            Omnivores like Carp, Buffalo fish, Minnows, Sunfish, Barb consume both meat and plant matter.
-                        </p>
-
-                        <p>
-                            Recommended Foods You can feed omnivores any of the foods in the carnivore and herbivore sections. Protein should make up a maximum of 40% of their diet. Dried Commercial Foods - You can feed your carnivorous fish a selection of dry foods including flake,
-                            granules, pellets and discs. Typical ingredients you want to look for in pre-prepared food include fish meal, shrimp meal, squid meal, earthworms, and Spirulina.
+                            <br> Omnivores like Carp, Buffalo fish, Minnows, Sunfish, Barb consume both meat and plant matter.
+                            <br> Recommended Foods You can feed omnivores any of the foods in the carnivore and herbivore sections. Protein should make up a maximum of 40% of their diet. Dried Commercial Foods - You can feed your carnivorous fish a selection
+                            of dry foods including flake, granules, pellets and discs. Typical ingredients you want to look for in pre-prepared food include fish meal, shrimp meal, squid meal, earthworms, and Spirulina.
                         </p>
                     </details>
                 </details>
@@ -394,12 +278,13 @@
         </div>
     </div>
     <footer>
-        <a href="faq.html">FAQ</a>
-        <a href="contactUs.html">Contact Us</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Contact us.html">Contact Us</a>
         <a href="#">Terms of use</a>
         <a href="aboutus.html">About Us</a>
         <a href="#">&copy; 2022 | VishwaPetCare</a>
     </footer>
 </body>
+<script src="navbar.js"></script>
 
 </html>
