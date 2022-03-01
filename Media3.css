@@ -1,4 +1,4 @@
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
     #name {
         font-size: 3vh;
     }
@@ -12,7 +12,7 @@
         top: 2vh;
     }
     #main {
-        width: 360px;
+        width: 100vw;
     }
     .img1 {
         width: 50vw;
