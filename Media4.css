@@ -70,4 +70,7 @@
     .hidden4 {
         display: block;
     }
+    .vaccines {
+        overflow: scroll;
+    }
 }
