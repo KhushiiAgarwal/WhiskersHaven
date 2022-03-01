@@ -70,7 +70,21 @@
     .hidden4 {
         display: block;
     }
-    .vaccines {
+    .vaccines table {
         overflow: scroll;
+        display: grid;
+        text-align: center;
+        margin: 0vh;
+        row-gap: 0vw;
+        column-gap: 12vh;
+        padding: 0vh;
+    }
+    .vaccines td {
+        width: 50vw;
+        padding: 2vh 0vw;
+    }
+    .vaccines th {
+        width: 50vw;
+        padding: 2vh 0vw;
     }
 }

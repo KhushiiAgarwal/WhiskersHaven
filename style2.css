@@ -275,7 +275,12 @@ a:hover::before {
 }
 
 .vaccines td {
-    padding: 15px;
+    padding: 2vh 0vh;
+    width: 25vw;
+}
+
+.vaccines th {
+    padding: 4vh 0vh;
 }
 
 .dropbtn {
