@@ -10,6 +10,7 @@
         display: flex;
         position: absolute;
         top: 2vh;
+        font-size: 6vw;
     }
     #main {
         width: 100vw;
