@@ -159,6 +159,10 @@ a:hover::before {
     padding: 20px;
 }
 
+.accessories ul {
+    margin: 30px 20px;
+}
+
 .space {
     margin-left: 30px;
 }
