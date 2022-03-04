@@ -22,13 +22,13 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-content: space-around;
-                row-gap: 2vh;
                 column-gap: 5vw;
                 justify-content: space-around;
                 font-size: 2vh;
                 width: 100vw;
                 padding: 0px;
                 margin: 0px;
+                height: 8vh;
             }
             .logo {
                 margin-left: 0vw;

@@ -45,13 +45,13 @@
         display: flex;
         flex-wrap: wrap;
         align-content: space-around;
-        row-gap: 2vh;
         column-gap: 5vw;
         justify-content: space-around;
         font-size: 2vh;
         width: 100vw;
         padding: 0px;
         margin: 0px;
+        height: 8vh;
     }
     .navbarIcon {
         width: 60px;
@@ -62,5 +62,34 @@
         justify-content: start;
         flex-wrap: nowrap;
         overflow-x: scroll;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    .main {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .container {
+        display: none;
+    }
+    .review1 {
+        display: none;
+    }
+    .rotate {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        font-size: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        flex-direction: column;
+    }
+    .rotimg {
+        height: 50vh;
     }
 }

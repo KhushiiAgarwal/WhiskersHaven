@@ -9,7 +9,7 @@
 }
 
 #main {
-    width: 98.9vw;
+    width: 100vw;
     position: relative;
     top: 12vh;
 }
@@ -158,11 +158,13 @@ main {
 footer {
     display: flex;
     background-color: #333;
-    height: 8vh;
-    padding: 5px 25px;
+    height: 5vh;
+    padding: 15px 25px;
     font-size: 25px;
     justify-content: space-between;
-    align-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 footer a {
@@ -180,7 +182,7 @@ footer a:before {
     background: lime;
     display: block;
     position: absolute;
-    bottom: 25px;
+    bottom: -5px;
     left: 0;
     width: 0;
     height: 3px;
