@@ -129,14 +129,15 @@ main {
 }
 
 .img {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
     justify-self: center;
     justify-content: space-around;
     align-self: center;
     padding: 12px;
-    margin: 12px;
+    margin: 50px;
     cursor: pointer;
+    /* width: 100vw; */
 }
 
 .img1 {
@@ -347,5 +348,9 @@ textarea {
 }
 
 .hidden2 {
+    display: none;
+}
+
+.rotate {
     display: none;
 }
