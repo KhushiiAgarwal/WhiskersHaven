@@ -1,0 +1,207 @@
+#message1 {
+    position: relative;
+    margin-top: 16vh;
+    text-align: center;
+    height: 85vh;
+    /* border: 2px solid darkgreen; */
+    background-color: rgb(250, 183, 0);
+    /* border-radius: 10px; */
+    padding: 2vw;
+    font-size: 10vh;
+}
+
+#message1 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#message1 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#message1 a:hover {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#message1 a:active {
+    text-decoration: none;
+    color: yellow;
+}
+
+.mess {
+    width: 20vw;
+    margin-top: 5vh;
+}
+
+#message1 {
+    transition: all 2s;
+}
+
+#message2 {
+    position: relative;
+    margin-top: 9vh;
+    text-align: center;
+    height: 85vh;
+    /* border: 2px solid darkgreen; */
+    background-color: lime;
+    /* border-radius: 10px; */
+    padding: 2vw;
+    font-size: 10vh;
+    /* z-index: -1; */
+}
+
+#message2 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#message2 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#message2 a:hover {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#message2 a:active {
+    text-decoration: none;
+    color: yellow;
+}
+
+.mess {
+    width: 20vw;
+    margin-top: 5vh;
+}
+
+#message2 {
+    transition: all 2s;
+}
+
+#message3 {
+    position: relative;
+    margin-top: 4vh;
+    text-align: center;
+    /* border: 2px solid darkgreen; */
+    height: 85vh;
+    background-color: rgb(0, 119, 255);
+    /* border-radius: 10px; */
+    padding: 2vw;
+    font-size: 10vh;
+    z-index: -1;
+}
+
+#message3 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#message3 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#message3 a:hover {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#message3 a:active {
+    text-decoration: none;
+    color: yellow;
+}
+
+.mess {
+    width: 20vw;
+    margin-top: 5vh;
+}
+
+#message3 {
+    transition: all 2s;
+}
+
+#message4 {
+    position: relative;
+    margin-top: 5vh;
+    height: 85vh;
+    text-align: center;
+    /* border: 2px solid darkgreen; */
+    background-color: rgb(234, 0, 255);
+    /* border-radius: 10px; */
+    padding: 2vw;
+    font-size: 10vh;
+    z-index: -1;
+    margin-bottom: 10vh;
+}
+
+#message4 a:link {
+    color: white;
+    text-decoration: none;
+}
+
+#message4 a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+#message4 a:hover {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+#message4 a:active {
+    text-decoration: none;
+    color: yellow;
+}
+
+.mess {
+    width: 20vw;
+    margin-top: 5vh;
+}
+
+#message4 {
+    transition: all 2s;
+}
+
+.hide {
+    opacity: 0;
+    left: -100%;
+}
+
+.show {
+    opacity: 1;
+    left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+    #message1 {
+        margin-top: 9vh;
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    #message2 {
+        margin-top: 5vh;
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    #message3 {
+        margin-top: 4vh;
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    #message4 {
+        margin-top: 5vh;
+        height: 90vh;
+        margin-bottom: 20vh;
+        padding-top: 10vh;
+    }
+    #main2 {
+        display: block;
+        width: 100vw;
+        margin-top: 12vh;
+        height: 90vh;
+    }
+}

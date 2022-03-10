@@ -9,9 +9,10 @@
 }
 
 #main {
-    width: 100vw;
+    width: 98.9vw;
     position: relative;
     top: 12vh;
+    margin: 0px;
 }
 
 .top-left {
@@ -36,6 +37,7 @@
     width: 100vw;
     position: fixed;
     top: 0vh;
+    z-index: 1;
 }
 
 #name {
@@ -137,7 +139,6 @@ main {
     padding: 12px;
     margin: 50px;
     cursor: pointer;
-    /* width: 100vw; */
 }
 
 .img1 {
@@ -222,7 +223,7 @@ textarea {
 .review1 {
     text-align: center;
     font-size: 5vh;
-    margin-top: 3vh;
+    margin-top: 28vh;
 }
 
 .review1 a {
@@ -354,5 +355,36 @@ textarea {
 }
 
 .rotate {
+    display: none;
+}
+
+.dog3 {
+    width: 2300px;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 1000px;
+    padding: 15px 15px 12px 15px;
+}
+
+#top:hover {
+    background-color: #555;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+}
+
+#main2 {
     display: none;
 }

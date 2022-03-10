@@ -30,3 +30,175 @@ window.onclick = function(event) {
         }
     }
 }
+
+function onlyOne(checkbox) {
+    var checkboxes = document.getElementsByName('check')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
+function onlyOne2(checkbox) {
+    var checkboxes = document.getElementsByName('check2')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
+function onlyOne3(checkbox) {
+    var checkboxes = document.getElementsByName('check3')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
+function onlyOne4(checkbox) {
+    var checkboxes = document.getElementsByName('check4')
+    checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+    })
+}
+
+function myFunction3() {
+    var checkBox = document.getElementById("dog1");
+    var text = document.getElementById("dog2");
+    if (checkBox.checked == true) {
+        text.style.display = "flex";
+    } else {
+        text.style.display = "none";
+    }
+    var checkBox = document.getElementById("cat1");
+    var text = document.getElementById("cat2");
+    if (checkBox.checked == true) {
+        text.style.display = "flex";
+    } else {
+        text.style.display = "none";
+    }
+    var checkBox = document.getElementById("other1");
+    var text = document.getElementById("other2");
+    if (checkBox.checked == true) {
+        text.style.display = "flex";
+    } else {
+        text.style.display = "none";
+    }
+}
+
+function yesnoCheck(that) {
+    if (that.value == "other") {
+        document.getElementById("other2").style.display = "flex";
+    } else {
+        document.getElementById("other2").style.display = "none";
+    }
+}
+
+mybutton = document.getElementById("top");
+
+window.onscroll = function() { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {
+
+    myID1 = document.getElementById("message1");
+
+    var myScrollFunc = function() {
+        var y = document.documentElement.scrollTop;
+        if (y >= 550) {
+            myID1.className = "show"
+        } else {
+            myID1.className = "hide";
+        }
+    };
+    window.addEventListener("scroll", myScrollFunc);
+
+
+    myID2 = document.getElementById("message2");
+
+    var myScrollFunc2 = function() {
+        var y2 = window.scrollY;
+        if (y2 >= 1050) {
+            myID2.className = "show"
+        } else {
+            myID2.className = "hide";
+        }
+    };
+    window.addEventListener("scroll", myScrollFunc2);
+
+
+    myID3 = document.getElementById("message3");
+
+    var myScrollFunc3 = function() {
+        var y3 = window.scrollY;
+        if (y3 >= 1850) {
+            myID3.className = "show"
+        } else {
+            myID3.className = "hide";
+        }
+    };
+    window.addEventListener("scroll", myScrollFunc3);
+
+
+    myID4 = document.getElementById("message4");
+
+    var myScrollFunc4 = function() {
+        var y4 = window.scrollY;
+        if (y4 >= 2450) {
+            myID4.className = "show"
+        } else {
+            myID4.className = "hide";
+        }
+    };
+    window.addEventListener("scroll", myScrollFunc4);
+};
+
+function vh(v) {
+    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    return (v * h) / 100;
+}
+
+function vw(v) {
+    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    return (v * w) / 100;
+}
+
+function vmin(v) {
+    return Math.min(vh(v), vw(v));
+}
+
+function vmax(v) {
+    return Math.max(vh(v), vw(v));
+}
+// console.info(vh(100), Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+// console.info(vw(100), Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+// console.info(vmin(100));
+// console.info(vmax(100));
+
+// window.onscroll = function() {
+
+//     myID1 = document.getElementById("message1");
+
+//     if (vmin(100) >= 800) {
+//         myID1.className = "show"
+//     } else {
+//         myID1.className = "hide";
+//     }
+// };
+
+function getYPosition() {
+    var top = window.pageYOffset || document.documentElement.scrollTop
+    console.log(top);
+    return top;
+}
+
+getYPosition();

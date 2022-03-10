@@ -66,6 +66,7 @@
         flex-wrap: wrap;
         float: right;
         margin-left: 10vw;
+        outline: none;
     }
     
     #home a:link {
@@ -151,19 +152,23 @@
     #accessories {
         font-size: 42px;
         margin: 20px 0px 0px 40px;
+        outline: none;
     }
     
     .accessories {
         padding: 23px;
+        outline: none;
     }
     
     .accessories p {
         margin-left: 50px;
         padding: 20px;
+        outline: none;
     }
     
     .accessories ul {
         margin: 30px 20px;
+        outline: none;
     }
     
     .space {
@@ -182,6 +187,7 @@
         text-align: center;
         font-size: 23px;
         margin: 25px;
+        outline: none;
         width: 75vw;
         margin-left: 13vw;
     }
@@ -189,6 +195,7 @@
     .note {
         font-size: 60;
         color: red;
+        outline: none;
         text-align: center;
         margin: 25px;
     }
@@ -197,6 +204,7 @@
         font-size: 42px;
         text-align: center;
         color: darkgreen;
+        outline: none;
     }
     
     .img {
@@ -204,6 +212,7 @@
         flex-wrap: wrap;
         justify-self: center;
         justify-content: space-around;
+        outline: none;
         align-self: center;
         padding: 12px;
         margin: 12px;
@@ -212,6 +221,7 @@
     
     .vol {
         margin: 50px;
+        outline: none;
         font-size: 20px;
     }
     
@@ -245,66 +255,79 @@
         justify-content: space-around;
         align-self: center;
         flex-wrap: wrap;
+        outline: none;
         /* margin-left: 50px; */
     }
     
     #diseases {
         font-size: 42px;
         margin: 20px 0px 0px 40px;
+        outline: none;
     }
     
     .diseases {
         padding: 23px;
+        outline: none;
     }
     
     .diseases p {
         margin-left: 50px;
+        outline: none;
         padding: 20px;
     }
     
     #vaccines {
         font-size: 42px;
         margin: 20px 0px 0px 40px;
+        outline: none;
     }
     
     .vaccines {
+        outline: none;
         padding: 23px;
     }
     
     .vaccines p {
+        outline: none;
         margin-left: 50px;
         padding: 20px;
     }
     
     .vaccines table {
+        outline: none;
         width: 90vw;
         text-align: center;
     }
     
     .vaccines td {
+        outline: none;
         padding: 2vh 0vh;
         width: 25vw;
     }
     
     .vaccines th {
+        outline: none;
         padding: 4vh 0vh;
     }
     
     .dropbtn {
         padding: 16px;
         border: none;
+        outline: none;
         cursor: pointer;
         color: darkgreen;
     }
     
     .dropdown {
         position: relative;
+        outline: none;
         display: inline-block;
     }
     
     .dropdown-content {
         display: none;
         position: absolute;
+        outline: none;
         background-color: #dedede;
     }
     
@@ -370,6 +393,7 @@
         font-size: 10vh;
         text-align: center;
         color: darkgreen;
+        outline: none;
         margin: 5vh auto;
     }
     
@@ -379,6 +403,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        outline: none;
         text-align: center;
         margin: 6vh;
     }
@@ -387,6 +412,7 @@
         color: darkgreen;
         font-size: 3vh;
         display: flex;
+        outline: none;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -395,6 +421,7 @@
     
     .message {
         font-size: 4.5vh;
+        outline: none;
         margin: 3vh;
     }
     
@@ -402,6 +429,7 @@
         margin: 4vh;
         display: flex;
         flex-direction: column;
+        outline: none;
         align-items: center;
         justify-content: center;
         align-content: center;
@@ -410,14 +438,17 @@
     }
     
     .reach {
+        outline: none;
         margin: 5vh 0px 3vh 0px;
     }
     
     .contact-left {
+        outline: none;
         margin-bottom: 5vh;
     }
     
     .contact-right {
+        outline: none;
         margin-bottom: 5vh;
     }
     
@@ -426,6 +457,7 @@
         width: 280px;
         align-items: center;
         justify-content: space-around;
+        outline: none;
         align-content: center;
         align-content: space-around;
         row-gap: 2vh;
@@ -433,6 +465,7 @@
     
     .input-row button {
         height: 50px;
+        outline: none;
         width: 100px;
         font-size: 23px;
         margin-bottom: 10px;
@@ -442,6 +475,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        outline: none;
         justify-content: space-around;
         align-content: center;
         align-content: space-around;
@@ -450,6 +484,7 @@
     
     .team {
         font-size: 5vh;
+        outline: none;
         text-align: center;
         color: darkgreen;
         margin-bottom: 5vh;
@@ -458,6 +493,7 @@
     .name1 {
         text-align: center;
         font-size: 23px;
+        outline: none;
         width: 300px;
         color: darkgreen;
         margin-bottom: 30px;
@@ -465,9 +501,100 @@
     
     .name1 a {
         color: darkgreen;
+        outline: none;
         text-decoration: none;
     }
     
     .profile {
+        outline: none;
         margin-left: 100px;
+    }
+    
+    .img12 {
+        outline: none;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .img13 {
+        outline: none;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .img14 {
+        outline: none;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: space-between;
+        justify-content: space-around;
+    }
+    
+    .box {
+        height: 200px;
+        width: 200px;
+        border: 2px solid #333;
+        border-radius: 23px;
+        text-align: center;
+        background-color: #A9C9FF;
+        background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+    }
+    
+    .box a {
+        text-decoration: none;
+        color: darkgreen;
+        /* color: white; */
+    }
+    
+    .img15 {
+        width: 200px;
+        border-radius: 23px;
+        object-fit: fill;
+        margin-bottom: 10px;
+    }
+    
+    .img6 {
+        border-radius: 23px;
+        margin: auto;
+    }
+    
+    .subinfo2 {
+        font-size: 20px;
+        color: darkgreen;
+        margin-bottom: 25px;
+    }
+    
+    .subinfo2 table {
+        width: 20vw;
+        margin: auto;
+        row-gap: 23px;
+    }
+    
+    #top {
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        right: 10px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 15px 15px 12px 15px;
+        border-radius: 1000px;
+    }
+    
+    #top:hover {
+        background-color: #555;
+    }
+    
+    .top {
+        width: 50px;
+        height: 50px;
+        border-radius: 1000px;
     }

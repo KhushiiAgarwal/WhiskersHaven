@@ -1,0 +1,259 @@
+        #rehome {
+            margin: 50px;
+            font-size: 8vh;
+            text-align: center;
+        }
+        
+        .petname {
+            border-radius: 23px;
+        }
+        
+        .rehome2 {
+            margin: 50px;
+            font-size: 5vh;
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        li {
+            display: inline-block;
+        }
+        
+        input[type="checkbox"][id^="dog"] {
+            display: none;
+        }
+        
+        input[type="checkbox"][id^="cat"] {
+            display: none;
+        }
+        
+        input[type="checkbox"][id^="other"] {
+            display: none;
+        }
+        
+        input[type="checkbox"][id^="yes"] {
+            display: none;
+        }
+        
+        input[type="checkbox"][id^="no"] {
+            display: none;
+        }
+        
+        label {
+            padding: 10px;
+            display: block;
+            position: relative;
+            margin: 10px;
+            cursor: pointer;
+        }
+        
+        label:before {
+            color: white;
+            border-radius: 50%;
+            border: 1px solid grey;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 28px;
+            transition-duration: 0.4s;
+            transform: scale(0);
+        }
+        
+        label img {
+            transition-duration: 0.2s;
+            transform-origin: 50% 50%;
+        }
+        
+         :checked+label {
+            border-color: #ddd;
+        }
+        
+         :checked+label:before {
+            content: "✓";
+            background-color: grey;
+            transform: scale(1);
+        }
+        
+         :checked+label img {
+            transform: scale(0.9);
+            box-shadow: 0 0 5px #333;
+            z-index: -1;
+        }
+        
+        #selector {
+            text-align: center;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #dog2 {
+            align-items: center;
+        }
+        
+        .dog3 {
+            height: 4vh;
+            width: 12vw;
+            border-radius: 23px;
+        }
+        
+        #cat2 {
+            align-items: center;
+        }
+        
+        .cat3 {
+            height: 4vh;
+            width: 12vw;
+            border-radius: 23px;
+        }
+        
+        #other2 {
+            align-items: center;
+        }
+        
+        .other3 {
+            height: 4vh;
+            width: 15vw;
+            border-radius: 23px;
+        }
+        
+        select option {
+            color: darkgreen;
+            border-radius: 23px;
+            font-size: 17px;
+        }
+        
+        input[type="checkbox"][id="male"] {
+            display: none;
+        }
+        
+        input[type="checkbox"][id="female"] {
+            display: none;
+        }
+        
+        #gender {
+            display: flex;
+        }
+        
+        #vaccinated {
+            display: flex;
+        }
+        
+        #kids {
+            display: flex;
+        }
+        
+        .age {
+            display: flex;
+            align-items: center;
+        }
+        
+        #age {
+            height: 20px;
+            border-radius: 23px;
+        }
+        
+        #desc textarea {
+            width: 90vw;
+            height: 10vh;
+            margin-left: 23px;
+            font-size: 23px;
+        }
+        
+        .wrap {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .button {
+            width: 300px;
+            height: 60px;
+            font-size: 22px;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: white;
+            background: #4FD1C5;
+            border: none;
+            border-radius: 1000px;
+            box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+            cursor: pointer;
+            position: relative;
+            padding: 10px;
+            margin: 7vh;
+            outline: none;
+        }
+        
+        .button:hover {
+            color: #313133;
+            transform: translateY(-6px);
+        }
+        
+        body {
+            background: linear-gradient(white, #dedede);
+        }
+        
+        .petimg {
+            display: flex;
+            align-items: center;
+        }
+        
+        @media screen and (max-width: 600px) {
+            #rehome {
+                font-size: 10vw;
+            }
+            .petname {
+                width: 30vw;
+            }
+            .dog3 {
+                width: 30vw;
+            }
+            .cat3 {
+                width: 30vw;
+            }
+            .other3 {
+                width: 30vw;
+            }
+            #age {
+                width: 23vw;
+            }
+            #gender {
+                display: inline-block;
+                width: 90vw;
+                margin-bottom: 2vh;
+            }
+            .gender ul {
+                display: flex;
+                justify-content: space-around;
+            }
+            #kids {
+                display: inline-block;
+                width: 90vw;
+                margin-bottom: 2vh;
+            }
+            #vaccinated {
+                display: inline-block;
+                width: 90vw;
+                margin-bottom: 2vh;
+            }
+            .petimg {
+                display: inline-block;
+                width: 90vw;
+                margin-bottom: 3vh;
+            }
+            .petimg2 {
+                margin-top: 2vh;
+                margin-left: 15vw;
+            }
+            #desc textarea {
+                width: 80vw;
+            }
+        }
