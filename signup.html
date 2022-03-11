@@ -1,4 +1,4 @@
-/*<?php
+<?php
    define('DB_SERVER', 'localhost:3036');
    define('DB_USERNAME', 'root');
    define('DB_PASSWORD', 'test12345');
@@ -10,21 +10,15 @@
    $dbuser = 'root';
    $dbpass = 'rootpassword';
    $conn = mysql_connect($dbhost, $dbuser, $dbpass);
-   
+
+   $name=
+
    if(! $conn ) {
       die('Could not connect: ' . mysql_error());
    }
    
    echo 'Connected successfully';
-   
-   $sql = 'CREATE Database test_db';
-   $retval = mysql_query( $sql, $conn );
-   
-   if(! $retval ) {
-      die('Could not create database: ' . mysql_error());
-   }
-   
-   echo "Database test_db created successfully\n";
+  
 
 $sql = 'INSERT INTO usercare '.
       '(uname,gender,dob,email,ph_no,pass,address) '.
@@ -39,38 +33,8 @@ $sql = 'INSERT INTO usercare '.
    
    echo "Entered data successfully\n";
 
-$sql = 'SELECT * FROM usercare';
-   mysql_select_db('test_db');
-   $retval = mysql_query( $sql, $conn );
-   
-   if(! $retval ) {
-      die('Could not get data: ' . mysql_error());
-   }
-   
-   while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
-      echo "Username :{$row['uname']}  <br> ".
-         "Gender :{$row['gender']}  <br> ".
-         "Date_of_Birth :{$row['dob']}  <br> ".
-        "Email-id :{$row['email']}  <br> ".
-        "Contact No :{$row['ph_no']}  <br> ".
-        "Address :{$row['address']}  <br> ".
-
-         "--------------------------------<br>";
-   }
-   
-   echo "Fetched data successfully\n";
-
-$sql = "DELETE FROM usercare WHERE uname = $uname" ;
-            mysql_select_db('test_db');
-            $retval = mysql_query( $sql, $conn );
-            
-            if(! $retval ) {
-               die('Could not delete data: ' . mysql_error());
-            }
-            
-            echo "Deleted data successfully\n";
 mysql_close($conn);
-?> */
+?> 
 <html>
 
 <head>
@@ -98,11 +62,9 @@ WELCOME TO SIGN UP
                     <br><br> Email ID* <input type="email" id=eid placeholder="Enter Email address" required>
                     <br><br> Contact Number* <input type="tel" id=ph placeholder="10-digit mobile number" required>
                     <br><br> Password* <input type="password" name="pass" placeholder="Password" required minlength="6" />
-                    <br><br> Password* <input type="password" name="pass" placeholder="Re-type password" minlength="6" required/>
                     <br><br> Address* <input type="text" id=ad placeholder="Address with city & pincode" overflow: "scroll;" required/>
                     <br><br> Experience in pet care <input type="text" name="ex" placeholder="Experience in 200 words" minlength="50" maxlength="500" overflow="scroll" height="100px" width="200px" />
-                    <br><br> &emsp; &emsp; Pet pic <input type="file" name=im placeholder="200kb image of pet">
-                    <br><br> &ensp;
+                    
                     <input type="reset" name="rest" /> &ensp; <input type="submit" name="sub" /><br>
     </h3>
     <h6 style="color:Red;">* important</h6>
