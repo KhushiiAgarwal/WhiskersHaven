@@ -1,3 +1,76 @@
+/*<?php
+   define('DB_SERVER', 'localhost:3036');
+   define('DB_USERNAME', 'root');
+   define('DB_PASSWORD', 'test12345');
+   define('DB_DATABASE', 'database');
+   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+?>
+<?php
+   $dbhost = 'localhost:3036';
+   $dbuser = 'root';
+   $dbpass = 'rootpassword';
+   $conn = mysql_connect($dbhost, $dbuser, $dbpass);
+   
+   if(! $conn ) {
+      die('Could not connect: ' . mysql_error());
+   }
+   
+   echo 'Connected successfully';
+   
+   $sql = 'CREATE Database test_db';
+   $retval = mysql_query( $sql, $conn );
+   
+   if(! $retval ) {
+      die('Could not create database: ' . mysql_error());
+   }
+   
+   echo "Database test_db created successfully\n";
+
+$sql = 'INSERT INTO usercare '.
+      '(uname,gender,dob,email,ph_no,pass,address) '.
+      'VALUES ()';
+      
+   mysql_select_db('test_db');
+   $retval = mysql_query( $sql, $conn );
+   
+   if(! $retval ) {
+      die('Could not enter data: ' . mysql_error());
+   }
+   
+   echo "Entered data successfully\n";
+
+$sql = 'SELECT * FROM usercare';
+   mysql_select_db('test_db');
+   $retval = mysql_query( $sql, $conn );
+   
+   if(! $retval ) {
+      die('Could not get data: ' . mysql_error());
+   }
+   
+   while($row = mysql_fetch_array($retval, MYSQL_ASSOC)) {
+      echo "Username :{$row['uname']}  <br> ".
+         "Gender :{$row['gender']}  <br> ".
+         "Date_of_Birth :{$row['dob']}  <br> ".
+        "Email-id :{$row['email']}  <br> ".
+        "Contact No :{$row['ph_no']}  <br> ".
+        "Address :{$row['address']}  <br> ".
+
+         "--------------------------------<br>";
+   }
+   
+   echo "Fetched data successfully\n";
+
+$sql = "DELETE FROM usercare WHERE uname = $uname" ;
+            mysql_select_db('test_db');
+            $retval = mysql_query( $sql, $conn );
+            
+            if(! $retval ) {
+               die('Could not delete data: ' . mysql_error());
+            }
+            
+            echo "Deleted data successfully\n";
+mysql_close($conn);
+?> */
 <html>
 
 <head>
