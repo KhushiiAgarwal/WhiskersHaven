@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 session_start();
 
 if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
@@ -6,88 +6,88 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     exit;
 }
 
-?>
+?> -->
 
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="logo.jpeg">
-        <title>Rehome A Pet</title>
-        <link rel="stylesheet" href="style2.css">
-        <link rel="stylesheet" href="rehome.css">
-        <link rel="stylesheet" href="MediaQuery2.css">
-        <link rel="stylesheet" href="Media4.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+    <title>Rehome A Pet</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="rehome.css">
+    <link rel="stylesheet" href="MediaQuery2.css">
+    <link rel="stylesheet" href="Media4.css">
 
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div class="bar">
-                <div id="name" class="top-left">
-                    <a href="index.html">Whisker's Haven <br>
+<body>
+    <header>
+        <div class="bar">
+            <div id="name" class="top-left">
+                <a href="index.html">Whisker's Haven <br>
                         <div id="subname" class="hidden"> You Are Here , Because You Care </div>
                     </a>
-                    <div id="home">
-                        <div class="hidden">
-                            <a href="index.html"> Home </a>
+                <div id="home">
+                    <div class="hidden">
+                        <a href="index.html"> Home </a>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn hidden">Pet Care</a>
+                        <div class="dropdown-content">
+                            <a href="petCare.html">Pet Diets</a>
+                            <a href="accessories.html">Accessories</a>
+                            <a href="disease.html">Diseases</a>
+                            <a href="vaccine.html">Vaccines</a>
+                            <a href="mapintegration.html">Nearby Hospitals</a>
                         </div>
-                        <div class="dropdown">
-                            <a class="dropbtn hidden">Pet Care</a>
-                            <div class="dropdown-content">
-                                <a href="petCare.html">Pet Diets</a>
-                                <a href="accessories.html">Accessories</a>
-                                <a href="disease.html">Diseases</a>
-                                <a href="vaccine.html">Vaccines</a>
-                                <a href="mapintegration.html">Nearby Hospitals</a>
-                            </div>
-                        </div>
-                        <div class="hidden">
-                            <a href="volunteers.html">Shelter & Rescue</a>
-                        </div>
-                        <div class="hidden">
-                            <a href="Rehome.html">Rehome A Pet</a>
-                        </div>
-                        <div class="hidden">
-                            <a href="adopt.html">Adopt A Pet</a>
-                        </div>
-                        <div class="hidden">
-                            <a href="login.html">Login</a>
-                        </div>
-                        <div class="dropdown1 navbar">
-                            <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg"
+                    </div>
+                    <div class="hidden">
+                        <a href="volunteers.html">Shelter & Rescue</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="Rehome.html">Rehome A Pet</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="adopt.html">Adopt A Pet</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="login.html">Login</a>
+                    </div>
+                    <div class="dropdown1 navbar">
+                        <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg"
                                     alt=""></button>
-                            <div id="myDropdown1" class="dropdown-content1">
-                                <a href=" index.html">Home</a>
-                                <div class="dropdown">
-                                    <a class="dropbtn hidden">Pet Care</a>
-                                    <div class="dropdown-content">
-                                        <a href=" petCare.html">Pet Diets</a>
-                                        <a href=" accessories.html">Accessories</a>
-                                        <a href=" disease.html">Diseases</a>
-                                        <a href=" vaccine.html">Vaccines</a>
-                                        <a href="mapintegration.html">Nearby Hospitals</a>
-                                    </div>
+                        <div id="myDropdown1" class="dropdown-content1">
+                            <a href=" index.html">Home</a>
+                            <div class="dropdown">
+                                <a class="dropbtn hidden">Pet Care</a>
+                                <div class="dropdown-content">
+                                    <a href=" petCare.html">Pet Diets</a>
+                                    <a href=" accessories.html">Accessories</a>
+                                    <a href=" disease.html">Diseases</a>
+                                    <a href=" vaccine.html">Vaccines</a>
+                                    <a href="mapintegration.html">Nearby Hospitals</a>
                                 </div>
-                                <a href="volunteers.html">Shelter & Rescue</a>
-                                <a href="Rehome.html">Rehome A Pet</a>
-                                <a href="adopt.html">Adopt A Pet</a>
-                                <a href="login.html">Login</a>
                             </div>
+                            <a href="volunteers.html">Shelter & Rescue</a>
+                            <a href="Rehome.html">Rehome A Pet</a>
+                            <a href="adopt.html">Adopt A Pet</a>
+                            <a href="login.html">Login</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="rotate">
-            <img class="rotimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAACaCAMAAAD8SyGRAAAAdVBMVEUhISH///8/Pz8AAAAdHR0eHh4NDQ02NjYyMjJJSUmurq4aGhqVlZUXFxcvLy9jY2M8PDy4uLhPT08mJiZERERSUlIlJSUrKytbW1vV1dUTExOOjo5+fn63t7d1dXXh4eGampru7u5ra2vr6+vDw8OkpKSHh4fdMGIKAAAEhUlEQVR4nO3dD3eaOhjHcYTnAWIKpkkAdXVr1+2+/5d4n4DWPz2TbCf3ttPf5xyd0sjs1wDas7IsAwAAAAAAAAAAAAAAAAAAAAAAgE+GP/oJ3Ahui49+CrehfN4VdLFMNxEwk8+VD4vNtjlfZFcRnP6gZ/w5UfFlsXgx5cmi7dMixgv2rm90UdSrx1Dl+8mOslgudo9zdpuFwpScNIVavh7m13PxNr8kZDHvC0JOuOg2p1vqDz6UlJB6dquVXStCBtvmx/ku71uNkH+gVC/nHR+P74EQMl65mvJtds8P48x8OO4iETLethsrft0WRRne/ixWp59uEDKWdmGfuC62IZcUeT17G4mQ0Qo5XP8s9p9myudNcf7BBiEjlfLJ5eltWyZfXnzURsg4XLycdJSSlwMQMo58lF5e/ckZQsYpNq/F1U4IGYWzxWp7dQRCRtl+/TbzI3GEjFIu/7k+IREyTvHYz1RCyCjlczkzAiGj6O/NzAiEjNPORULIRBAyEYRMBCGv4XghJF0se7e+uw1p8mj1bvFu9HC5vnsN2eamiuWWi/rtzj5kdTkn7zfkcLm1Rm3aZBDyTJu30WNPDzaMkOcQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETOQ3Qx7PAeKGEePkIJPfDBkFIWcg5BUImQhCJoKQibT5EH1KOIS8os3jVbu4kPm7kzjcg7aO1pqfy3m7p7lfDgUqI87WV8z81jcAAAAAAAAAAAAAfAp3+X8BOZdRNtQpV8nmtKRLuepPi6vOK6ur/NeTaPYEiO+QpdM7dzE/uapI+7o2zNkg3z67njLuw7m5aBg3UbbHwZks4uFty+WMendsRkM/DdKKMnJyi8cxWRgmV27ubLN/MwnJZKraUKXyjtl75XWuvOLMeltJi2rt27zO2A/cqVyvZVg7zTOyWinfcZiAPN5uwwptriyx9cpU8vKY2hJZ72stS/ztluTK9FVHtdF2qwfPpLdWW62JFMtNmU1yj6aQtG54vIRwMod75ZSmQYUJKCFtGyYndQ3rdeOdPLoJDRur84rCq9Vs7ezz+WvJBPLybdYmWyuZUtoo1eneql53cr+jcYfH+xkZtlg7XcJ09C6vp3k5zchxunEYoJrx0Vr1zuvQU8arsOR2DzxhH8nj/LINEZlch2+bsm66n+1DthldhGSfyTHKjCHHZVqNKwxfDO10eLTzvg9fD3+RctP6bhSHFnKd6y4ca3Kj27V2pJUzXnM4eFCnuZVNeDWwPQmZ9Vb2gJ2MrLRlbbrmENKFVdQqPFqmoWzcNFjNmeuI+g/9Xv9b7fjvz4aaWTY9R3KIqOVKhUNQuJbIta0oV6p2mTTn/UX2nZ1cOxkjE88qmdhmWqGsx7Ty0sgfzHUdRnMtD5dXQ115k3VDmHi8klI03SQ+LB8XT++GDhce5+U0hsZHna7nsI79aDqOhTNsbvjA8b9CRgAAAAAAAAAAAAAAAAAAAACAS/8CaMhRM16CG0UAAAAASUVORK5CYII="
-                alt="">
         </div>
-        <button onclick="topFunction()" id="top"><img class="top" src="top.png"></button>
-        <?php
+    </header>
+    <div class="rotate">
+        <img class="rotimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAACaCAMAAAD8SyGRAAAAdVBMVEUhISH///8/Pz8AAAAdHR0eHh4NDQ02NjYyMjJJSUmurq4aGhqVlZUXFxcvLy9jY2M8PDy4uLhPT08mJiZERERSUlIlJSUrKytbW1vV1dUTExOOjo5+fn63t7d1dXXh4eGampru7u5ra2vr6+vDw8OkpKSHh4fdMGIKAAAEhUlEQVR4nO3dD3eaOhjHcYTnAWIKpkkAdXVr1+2+/5d4n4DWPz2TbCf3ttPf5xyd0sjs1wDas7IsAwAAAAAAAAAAAAAAAAAAAAAAgE+GP/oJ3Ahui49+CrehfN4VdLFMNxEwk8+VD4vNtjlfZFcRnP6gZ/w5UfFlsXgx5cmi7dMixgv2rm90UdSrx1Dl+8mOslgudo9zdpuFwpScNIVavh7m13PxNr8kZDHvC0JOuOg2p1vqDz6UlJB6dquVXStCBtvmx/ku71uNkH+gVC/nHR+P74EQMl65mvJtds8P48x8OO4iETLethsrft0WRRne/ixWp59uEDKWdmGfuC62IZcUeT17G4mQ0Qo5XP8s9p9myudNcf7BBiEjlfLJ5eltWyZfXnzURsg4XLycdJSSlwMQMo58lF5e/ckZQsYpNq/F1U4IGYWzxWp7dQRCRtl+/TbzI3GEjFIu/7k+IREyTvHYz1RCyCjlczkzAiGj6O/NzAiEjNPORULIRBAyEYRMBCGv4XghJF0se7e+uw1p8mj1bvFu9HC5vnsN2eamiuWWi/rtzj5kdTkn7zfkcLm1Rm3aZBDyTJu30WNPDzaMkOcQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETOQ3Qx7PAeKGEePkIJPfDBkFIWcg5BUImQhCJoKQibT5EH1KOIS8os3jVbu4kPm7kzjcg7aO1pqfy3m7p7lfDgUqI87WV8z81jcAAAAAAAAAAAAAfAp3+X8BOZdRNtQpV8nmtKRLuepPi6vOK6ur/NeTaPYEiO+QpdM7dzE/uapI+7o2zNkg3z67njLuw7m5aBg3UbbHwZks4uFty+WMendsRkM/DdKKMnJyi8cxWRgmV27ubLN/MwnJZKraUKXyjtl75XWuvOLMeltJi2rt27zO2A/cqVyvZVg7zTOyWinfcZiAPN5uwwptriyx9cpU8vKY2hJZ72stS/ztluTK9FVHtdF2qwfPpLdWW62JFMtNmU1yj6aQtG54vIRwMod75ZSmQYUJKCFtGyYndQ3rdeOdPLoJDRur84rCq9Vs7ezz+WvJBPLybdYmWyuZUtoo1eneql53cr+jcYfH+xkZtlg7XcJ09C6vp3k5zchxunEYoJrx0Vr1zuvQU8arsOR2DzxhH8nj/LINEZlch2+bsm66n+1DthldhGSfyTHKjCHHZVqNKwxfDO10eLTzvg9fD3+RctP6bhSHFnKd6y4ca3Kj27V2pJUzXnM4eFCnuZVNeDWwPQmZ9Vb2gJ2MrLRlbbrmENKFVdQqPFqmoWzcNFjNmeuI+g/9Xv9b7fjvz4aaWTY9R3KIqOVKhUNQuJbIta0oV6p2mTTn/UX2nZ1cOxkjE88qmdhmWqGsx7Ty0sgfzHUdRnMtD5dXQ115k3VDmHi8klI03SQ+LB8XT++GDhce5+U0hsZHna7nsI79aDqOhTNsbvjA8b9CRgAAAAAAAAAAAAAAAAAAAACAS/8CaMhRM16CG0UAAAAASUVORK5CYII="
+            alt="">
+    </div>
+    <button onclick="topFunction()" id="top"><img class="top" src="top.png"></button>
+    <!-- <?php
         error_reporting(E_ALL ^ E_WARNING); 
 
         $name = $_POST['name'];
@@ -145,22 +145,18 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 // echo 'Your entry has been submitted successfully!';
             }
             else{
-                echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);   
-            }
-        }
-      
-?>
-            <div class="main3">
-                <div id="rehome"><b><u><i> Rehome A Pet</i></u></b></div>
-                <div class="rehome">
-                    <label class="rehome2"> Pet Details </label>
-                    <form action="/cp/Rehome.php" method="post">
-                        <label> Enter Your Pet's Name :
+                echo "The record was not inserted successfully because of this error --->". mysqli_error($conn); } } ?> -->
+    <div class="main3">
+        <div id="rehome"><b><u><i> Rehome A Pet</i></u></b></div>
+        <div class="rehome">
+            <label class="rehome2"> Pet Details </label>
+            <form action="/cp/Rehome.php" method="post">
+                <label> Enter Your Pet's Name :
                 <input type="text" name="name" id="petname" required>
                 </label>
-                        <div>
-                            <label for="selector">Select the Species of Your Pet : </label>
-                            <span id="selector">
+                <div>
+                    <label for="selector">Select the Species of Your Pet : </label>
+                    <span id="selector">
                 <ul>
                     <li><input type="checkbox" name="check[]" value="dog" id="dog1"
                             onclick="onlyOne(this);myFunction3();">
@@ -176,7 +172,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </li>
                 </ul>
                 </span>
-                            <span id="dog2" style="display: none; ">
+                    <span id="dog2" style="display: none; ">
                 <label for="dog2 ">Select the Breed of your Dog : </label>
                 <select class="dog3" name="DogBreed" onchange="yesnoCheck(this);">
                     <option value="" style="display:none">Select</option>
@@ -196,7 +192,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     <option value="other">other</option>
                 </select><br>
                 </span>
-                            <span id="cat2" style="display: none;">
+                    <span id="cat2" style="display: none;">
                 <label for="cat2 ">Select the Breed of your Cat : </label>
                 <select class="cat3" name="CatBreed" onchange="yesnoCheck(this);">
                     <option value="" style="display:none">Select</option>
@@ -214,18 +210,18 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     <option value="other">other</option>
                 </select><br>
                 </span>
-                            <span id="other2" style="display: none; ">
+                    <span id="other2" style="display: none; ">
                 <label for="other2">Please Specify : </label>
                 <input type="text " name="other" class="other3"><br>
                 </span>
-                        </div>
-                        <div class="age">
-                            <label>Age of Your Pet : </label>
-                            <input type="number" name="age" id="age" min="0" max="100" required>
-                        </div>
-                        <div id="gender">
-                            <label for="gender">Select the Gender of Your Pet : </label>
-                            <span class="gender">
+                </div>
+                <div class="age">
+                    <label>Age of Your Pet : </label>
+                    <input type="number" name="age" id="age" min="0" max="100" required>
+                </div>
+                <div id="gender">
+                    <label for="gender">Select the Gender of Your Pet : </label>
+                    <span class="gender">
                 <ul>
                     <li><input type="checkbox" id="male" name="check2[]" value="male" onclick="onlyOne2(this);">
                         <label for="male">Male</label>
@@ -236,10 +232,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </li>
                 </ul>
                 </span>
-                        </div>
-                        <div id="vaccinated">
-                            <label for="gender">Is your Pet vaccinated? : </label>
-                            <span class="gender">
+                </div>
+                <div id="vaccinated">
+                    <label for="gender">Is your Pet vaccinated? : </label>
+                    <span class="gender">
                 <ul>
                     <li><input type="checkbox" id="yes" name="check3[]" value="yes" onclick="onlyOne3(this);">
                         <label for="yes">Yes</label>
@@ -249,10 +245,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </li>
                 </ul>
                 </span>
-                        </div>
-                        <div id="kids">
-                            <label for="gender">Is your Pet good with Kids? : </label>
-                            <span class="gender">
+                </div>
+                <div id="kids">
+                    <label for="gender">Is your Pet good with Kids? : </label>
+                    <span class="gender">
                 <ul>
                     <li><input type="checkbox" id="yes2" name="check4[]" value="yes" onclick="onlyOne4(this);">
                         <label for="yes2">Yes</label>
@@ -262,36 +258,36 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                     </li>
                 </ul>
                 </span>
-                        </div>
-                        <div class="petimg"><label>Upload a Image of Your Pet : </label>
-                            <input type="file" name=image accept="image/*" required>
-                        </div>
-                        <label for="gender">Address : </label>
-                        <div id="address">
-                            <input class="address" type="text" name="house" placeholder="House.No./Building.NO." required>
-                            <input class="address" type="text" name="landmark" placeholder="Near Lankmark" required>
-                            <input class="address" type="text" name="area" placeholder="Area" required>
-                            <input class="address" type="text" name="city" placeholder="City" required>
-                        </div>
-                        <div id="desc">
-                            <label for="gender">Why do you want to donate the Pet?</label>
-                            <textarea name="desc" class="textarea" required></textarea>
-                        </div>
-                        <div class="wrap">
-                            <button class="button" type="submit">SUBMIT</button>
-                        </div>
-                    </form>
                 </div>
-            </div>
-            <footer>
-                <a href="FAQ.html ">FAQ</a>
-                <a href="Contact us.html ">Contact Us</a>
-                <a href="# ">Terms of use</a>
-                <a href="aboutus.html ">About Us</a>
-                <a href="# ">&copy; 2022 | VishwaPetCare</a>
-            </footer>
+                <div class="petimg"><label>Upload a Image of Your Pet : </label>
+                    <input type="file" name=image accept="image/*" required>
+                </div>
+                <label for="gender">Address : </label>
+                <div id="address">
+                    <input class="address" type="text" name="house" placeholder="House.No./Building.NO." required>
+                    <input class="address" type="text" name="landmark" placeholder="Near Lankmark" required>
+                    <input class="address" type="text" name="area" placeholder="Area" required>
+                    <input class="address" type="text" name="city" placeholder="City" required>
+                </div>
+                <div id="desc">
+                    <label for="gender">Why do you want to donate the Pet?</label>
+                    <textarea name="desc" class="textarea" required></textarea>
+                </div>
+                <div class="wrap">
+                    <button class="button" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <a href="FAQ.html ">FAQ</a>
+        <a href="Contact us.html ">Contact Us</a>
+        <a href="# ">Terms of use</a>
+        <a href="aboutus.html ">About Us</a>
+        <a href="# ">&copy; 2022 | VishwaPetCare</a>
+    </footer>
 
-    </body>
-    <script src="navbar.js "></script>
+</body>
+<script src="navbar.js "></script>
 
-    </html>
+</html>
