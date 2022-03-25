@@ -145,11 +145,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 // echo 'Your entry has been submitted successfully!';
             }
             else{
-                echo "The record was not inserted successfully because of this error :  ". mysqli_error($conn);   
-            }
-        }
-      
-?> -->
+                echo "The record was not inserted successfully because of this error : ". mysqli_error($conn); } } ?> -->
     <div class="main3">
         <div id="rehome"><b><u><i> Rehome A Pet</i></u></b></div>
         <div class="rehome">
@@ -177,25 +173,25 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 </ul>
                 </span>
                     <span id="dog2" style="display: none; ">
-                <label for="dog2 ">Select the Breed of your Dog : </label>
-                <select class="dog3" name="DogBreed" onchange="yesnoCheck(this);">
-                    <option value="" style="display:none">Select</option>
-                    <option>Affenpinscher</option>
-                    <option>Afghan Hound</option>
-                    <option>Aidi</option>
-                    <option>Airedale Terrier</option>
-                    <option>Akbash Dog</option>
-                    <option>Akita</option>
-                    <option>Alano Español</option>
-                    <option>Alaskan Klee Kai</option>
-                    <option>Alaskan Malamute</option>
-                    <option>Alpine Dachsbracke</option>
-                    <option>Alpine Spaniel</option>
-                    <option>American Bulldog</option>
-                    <option>American Eskimo Dog</option>
-                    <option value="other">other</option>
-                </select><br>
-                </span>
+                        <label for="dog2 ">Select the Breed of your Dog : </label>
+                        <select class="dog3" name="DogBreed" onchange="yesnoCheck(this);">
+                        <option value="" style="display:none">Select</option>
+                        <option>Affenpinscher</option>
+                        <option>Afghan Hound</option>
+                        <option>Aidi</option>
+                        <option>Airedale Terrier</option>
+                        <option>Akbash Dog</option>
+                        <option>Akita</option>
+                        <option>Alano Español</option>
+                        <option>Alaskan Klee Kai</option>
+                        <option>Alaskan Malamute</option>
+                        <option>Alpine Dachsbracke</option>
+                        <option>Alpine Spaniel</option>
+                        <option>American Bulldog</option>
+                        <option>American Eskimo Dog</option>
+                        <option value="other">other</option>
+                        </select><br>
+                    </span>
                     <span id="cat2" style="display: none;">
                 <label for="cat2 ">Select the Breed of your Cat : </label>
                 <select class="cat3" name="CatBreed" onchange="yesnoCheck(this);">

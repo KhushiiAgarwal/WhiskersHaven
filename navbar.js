@@ -32,28 +32,28 @@ window.onclick = function(event) {
 }
 
 function onlyOne(checkbox) {
-    var checkboxes = document.getElementsByName('check')
+    var checkboxes = document.getElementsByName('check[]')
     checkboxes.forEach((item) => {
         if (item !== checkbox) item.checked = false
     })
 }
 
 function onlyOne2(checkbox) {
-    var checkboxes = document.getElementsByName('check2')
+    var checkboxes = document.getElementsByName('check2[]')
     checkboxes.forEach((item) => {
         if (item !== checkbox) item.checked = false
     })
 }
 
 function onlyOne3(checkbox) {
-    var checkboxes = document.getElementsByName('check3')
+    var checkboxes = document.getElementsByName('check3[]')
     checkboxes.forEach((item) => {
         if (item !== checkbox) item.checked = false
     })
 }
 
 function onlyOne4(checkbox) {
-    var checkboxes = document.getElementsByName('check4')
+    var checkboxes = document.getElementsByName('check4[]')
     checkboxes.forEach((item) => {
         if (item !== checkbox) item.checked = false
     })
@@ -161,21 +161,3 @@ function topFunction() {
 //     };
 //     window.addEventListener("scroll", myScrollFunc4);
 // };
-
-function vh(v) {
-    var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    return (v * h) / 100;
-}
-
-function vw(v) {
-    var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    return (v * w) / 100;
-}
-
-function vmin(v) {
-    return Math.min(vh(v), vw(v));
-}
-
-function vmax(v) {
-    return Math.max(vh(v), vw(v));
-}
