@@ -104,6 +104,12 @@
                 flex-wrap: wrap;
                 column-gap: 20vw;
             }
+            .box {
+                font-size: 4vw;
+            }
+            .img15 {
+                /* width: fit-content; */
+            }
         }
         
         @media screen and (max-height: 400px) {
