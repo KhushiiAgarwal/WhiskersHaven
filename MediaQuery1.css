@@ -60,4 +60,9 @@
         position: relative;
         right: 0px;
     }
+    #main2 {
+        display: block;
+        margin: 12vh auto;
+        height: 90vh;
+    }
 }

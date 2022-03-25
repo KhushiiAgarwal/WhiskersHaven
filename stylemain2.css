@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(112, 10, 78);
+    width: 100%;
+}
+
+.manual h3 {
+    /* color: rgb(174, 203, 230); */
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.manual {
+    /* color: aliceblue; */
+    padding-bottom: 30px;
+    text-align: center;
+    background-image: url(allimage/bg2.jpg);
+    background-size: cover;
+}
+
+.importance {
+    text-align: center;
+    background-color: rgb(250, 246, 8);
+    padding: 50px;
+    color: rgb(162 8 8);
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.difference {
+    padding: 30px;
+    padding-left: 30px;
+    background-color: rgb(87, 209, 209);
+}
+
+.us {
+    padding: 30px;
+    background-color: rgb(204, 49, 139);
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    height: 5vh;
+    padding: 15px 25px;
+    font-size: 25px;
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0px;
+}
+
+footer a {
+    background-image: linear-gradient( to right, lime, 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:before {
+    content: '';
+    background: lime;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.5s ease-in-out;
+}
+
+footer a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+.dropbtn {
+    padding: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: darkgreen;
+}
+
+.dropdown {
+    position: relative;
+    outline: none;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    outline: none;
+    background-color: #dedede;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkgreen;
+    color: #dedede;
+}
+
+#top {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 15px 12px 15px;
+    border-radius: 1000px;
+}
+
+#top:hover {
+    background-color: #555;
+}
+
+.top {
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+}
+
+header {
+    height: 16vh;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+}
+
+.bar {
+    background-color: #dedede;
+    height: 16vh;
+}
+
+#name {
+    font-size: 5vh;
+    text-decoration: none;
+    text-align: center;
+    height: 16vh;
+    display: flex;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    margin-left: 10px;
+}
+
+#name a:link {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+#name a:visited {
+    color: darkgreen;
+}
+
+#name a:hover {
+    color: brown;
+}
+
+#name a:active {
+    color: red;
+}
+
+#subname {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#home {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 22px;
+    text-decoration: none;
+    font-size: 23px;
+    margin: 3px;
+    width: 70vw;
+    font-size: 3vh;
+    column-gap: 2vw;
+    flex-wrap: wrap;
+    float: right;
+    margin-left: 10vw;
+    outline: none;
+}
+
+#home a:link {
+    color: darkgreen;
+    text-decoration: none;
+}
+
+#home a:visited {
+    color: darkgreen;
+}
+
+#home a:hover {
+    color: brown;
+}
+
+#home a:active {
+    color: red;
+}
+
+.navbar {
+    width: 50px;
+    display: none;
+}
+
+.hidden2 {
+    display: none;
+}
+
+.hidden4 {
+    display: none;
+}
+
+.logo2 {
+    display: none;
+}
+
+.rotate {
+    display: none;
+}
+
+.body2 {
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .hidden {
+        display: none;
+    }
+    #name {
+        width: auto;
+    }
+    #home {
+        width: auto;
+    }
+    .navbar {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        top: 3vh;
+    }
+    .dropbtn1 {
+        background-color: #dedede;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        height: 60px;
+    }
+    .dropbtn1:hover,
+    .dropbtn1:focus {
+        background-color: #c7c7c7;
+    }
+    .dropdown-content1 {
+        display: none;
+        position: relative;
+        top: 60px;
+        right: 160px;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    .dropdown-content1 a {
+        padding: 12px 16px;
+        display: block;
+        position: relative;
+    }
+    .dropdown1 a:hover {
+        background-color: #ddd;
+    }
+    .show1 {
+        display: block;
+    }
+    .navbarIcon {
+        width: 60px;
+        height: 60px;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+    .dropdown:hover .dropdown-content {
+        position: relative;
+        right: 0px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        column-gap: 5vw;
+        justify-content: space-around;
+        font-size: 2vh;
+        width: 100vw;
+        padding: 0px;
+        margin: 0px;
+        height: 8vh;
+    }
+    .navbarIcon {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-height: 400px) {
+    header {
+        display: none;
+    }
+    .body2 {
+        display: none;
+    }
+    .container {
+        display: none;
+    }
+    .review1 {
+        display: none;
+    }
+    .rotate {
+        display: block;
+        background-color: rgb(0, 0, 0);
+        height: 100vh;
+        font-size: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+        flex-direction: column;
+    }
+    .rotimg {
+        height: 100vh;
+        width: 100vw;
+    }
+}

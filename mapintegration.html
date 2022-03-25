@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pune Cares </title>
+    <link rel="icon" type="image/x-icon" href="/logo.jpeg">
+    <link rel="stylesheet" href="stylemain.css">
+    <link rel="stylesheet" href="MediaQuery2.css">
+    <link rel="stylesheet" href="Media4.css">
+</head>
+
+<body background="#">
+    <header>
+        <div class="bar">
+            <div id="name" class="top-left">
+                <a href="index.html">Whisker's Haven <br>
+                    <div id="subname" class="hidden"> You Are Here , Because You Care </div>
+                </a>
+                <div id="home">
+                    <div class="hidden">
+                        <a href="index.html"> Home </a>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn hidden">Pet Care</a>
+                        <div class="dropdown-content">
+                            <a href="petCare.html">Pet Diets</a>
+                            <a href="accessories.html">Accessories</a>
+                            <a href="disease.html">Diseases</a>
+                            <a href="vaccine.html">Vaccines</a>
+                            <a href="mapintegration.html">Nearby Hospitals</a>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <a href="volunteers.html">Shelter & Rescue</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="Rehome.html">Rehome A Pet</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="adopt.html">Adopt A Pet</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="login.html">Login</a>
+                    </div>
+                    <div class="dropdown1 navbar">
+                        <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg"
+                                alt=""></button>
+                        <div id="myDropdown1" class="dropdown-content1">
+                            <a href=" index.html">Home</a>
+                            <div class="dropdown">
+                                <a class="dropbtn hidden">Pet Care</a>
+                                <div class="dropdown-content">
+                                    <a href=" petCare.html">Pet Diets</a>
+                                    <a href=" accessories.html">Accessories</a>
+                                    <a href=" disease.html">Diseases</a>
+                                    <a href=" vaccine.html">Vaccines</a>
+                                    <a href="mapintegration.html">Nearby Hospitals</a>
+                                </div>
+                            </div>
+                            <a href="volunteers.html">Shelter & Rescue</a>
+                            <a href="Rehome.html">Rehome A Pet</a>
+                            <a href="adopt.html">Adopt A Pet</a>
+                            <a href="login.html">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="rotate">
+        <img class="rotimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAACaCAMAAAD8SyGRAAAAdVBMVEUhISH///8/Pz8AAAAdHR0eHh4NDQ02NjYyMjJJSUmurq4aGhqVlZUXFxcvLy9jY2M8PDy4uLhPT08mJiZERERSUlIlJSUrKytbW1vV1dUTExOOjo5+fn63t7d1dXXh4eGampru7u5ra2vr6+vDw8OkpKSHh4fdMGIKAAAEhUlEQVR4nO3dD3eaOhjHcYTnAWIKpkkAdXVr1+2+/5d4n4DWPz2TbCf3ttPf5xyd0sjs1wDas7IsAwAAAAAAAAAAAAAAAAAAAAAAgE+GP/oJ3Ahui49+CrehfN4VdLFMNxEwk8+VD4vNtjlfZFcRnP6gZ/w5UfFlsXgx5cmi7dMixgv2rm90UdSrx1Dl+8mOslgudo9zdpuFwpScNIVavh7m13PxNr8kZDHvC0JOuOg2p1vqDz6UlJB6dquVXStCBtvmx/ku71uNkH+gVC/nHR+P74EQMl65mvJtds8P48x8OO4iETLethsrft0WRRne/ixWp59uEDKWdmGfuC62IZcUeT17G4mQ0Qo5XP8s9p9myudNcf7BBiEjlfLJ5eltWyZfXnzURsg4XLycdJSSlwMQMo58lF5e/ckZQsYpNq/F1U4IGYWzxWp7dQRCRtl+/TbzI3GEjFIu/7k+IREyTvHYz1RCyCjlczkzAiGj6O/NzAiEjNPORULIRBAyEYRMBCGv4XghJF0se7e+uw1p8mj1bvFu9HC5vnsN2eamiuWWi/rtzj5kdTkn7zfkcLm1Rm3aZBDyTJu30WNPDzaMkOcQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETOQ3Qx7PAeKGEePkIJPfDBkFIWcg5BUImQhCJoKQibT5EH1KOIS8os3jVbu4kPm7kzjcg7aO1pqfy3m7p7lfDgUqI87WV8z81jcAAAAAAAAAAAAAfAp3+X8BOZdRNtQpV8nmtKRLuepPi6vOK6ur/NeTaPYEiO+QpdM7dzE/uapI+7o2zNkg3z67njLuw7m5aBg3UbbHwZks4uFty+WMendsRkM/DdKKMnJyi8cxWRgmV27ubLN/MwnJZKraUKXyjtl75XWuvOLMeltJi2rt27zO2A/cqVyvZVg7zTOyWinfcZiAPN5uwwptriyx9cpU8vKY2hJZ72stS/ztluTK9FVHtdF2qwfPpLdWW62JFMtNmU1yj6aQtG54vIRwMod75ZSmQYUJKCFtGyYndQ3rdeOdPLoJDRur84rCq9Vs7ezz+WvJBPLybdYmWyuZUtoo1eneql53cr+jcYfH+xkZtlg7XcJ09C6vp3k5zchxunEYoJrx0Vr1zuvQU8arsOR2DzxhH8nj/LINEZlch2+bsm66n+1DthldhGSfyTHKjCHHZVqNKwxfDO10eLTzvg9fD3+RctP6bhSHFnKd6y4ca3Kj27V2pJUzXnM4eFCnuZVNeDWwPQmZ9Vb2gJ2MrLRlbbrmENKFVdQqPFqmoWzcNFjNmeuI+g/9Xv9b7fjvz4aaWTY9R3KIqOVKhUNQuJbIta0oV6p2mTTn/UX2nZ1cOxkjE88qmdhmWqGsx7Ty0sgfzHUdRnMtD5dXQ115k3VDmHi8klI03SQ+LB8XT++GDhce5+U0hsZHna7nsI79aDqOhTNsbvjA8b9CRgAAAAAAAAAAAAAAAAAAAACAS/8CaMhRM16CG0UAAAAASUVORK5CYII="
+            alt="">
+    </div>
+    <button onclick="topFunction()" id="top"><img class="top" src="top.png"></button>
+    <div class="box">
+
+        <div class="head">
+            Pune - Care for animals...     </div>
+
+        <hr>     <br>     <br>     <br>
+        <div class="note"> 1. MAKE NEW LIFE </div>
+
+        <div class="nonhu">
+            <ul>
+                <li> All they want is to build a safe sanctuary for the dogs who are orphaned, or too old to be on the street, or are victims of cruelty, which they did. They have leased a small property to take their vision forward in Askarwadi, Pune in 2017.
+                    <li>
+                        They have now shifted their sanctuary premises to a better and well-equipped facility in Kasarsai near Hinjewadi.</li>
+                    <li>They intend to make it a full-fledged one-stop aid for all needy paws. The shelter would accept all kinds of cases, even dogs who are terminally ill, paralyzed, suffering from mobility & neurological issues. Such cases were mostly
+                        given up by other animal welfare organizations and doctors.</li>
+
+                    <li>At 'Make New Life', help dogs get a second chance at a dignified life and provide them end-of-life care to the best of their capacity;             proudly upholding their No-kill status at the shelter.</li>
+        </div>
+        <br>             <br>
+        <h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85626.42854198247!2d73.86905035791712!3d18.475084174940605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eababaaaaaab%3A0xda1a8e0a2d1b4fec!2sMAKE%20NEW%20LIFE!5e0!3m2!1sen!2sin!4v1646251340351!5m2!1sen!2sin"
+                width="400" height="200" style="border:0;" position="centre" loading="lazy"></iframe></h2>
+        <br>             <br>             <br>
+        <div class="note"> 2. MISSION POSSIBLE </div>
+
+        <div class="nonhu">
+            <ul>
+                <li>We here are a group of completely Devoted Animal lovers who for years have given our Support, Time, Energy, Love and Finances for the cause of saving the lives of Dogs and Cats. </li>Most of our Animals are Strays and are off the Streets
+                Of Pune in the state of Maharashtra.
+                <li> Many have been pulled out from Gutters and Garbage dumpsters where they were thrown to perish and Die.</li> We have managed to save hundreds of Dogs, small Pups, Cats and Kittens who have gone through unimaginable, unbelievable and unthinkable
+                atrocities my friends.</ul>
+            <br>             <br>                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85626.42854198247!2d73.86905035791712!3d18.475084174940605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1ce457a9307%3A0x33f27e56819735e5!2sMission%20Possible%20Pet%20House!5e0!3m2!1sen!2sin!4v1646256046372!5m2!1sen!2sin"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                 <br>                 <br>                 <br>
+            <div class="note"> 3. PET FORCE </div>
+
+            <div class="nonhu">
+                <ul>
+                    <li>Beside Strays we get plenty of Dogs and Cats injured in road accidents with severe injuries. Some Dogs are abandoned by their owners, some are used, abused and Discarded by Breeders.</li> Hundreds of Pups were fortunate to have been
+                    born here at my Bungalow which I have converted into a shelter for Destitute Animals and are raised by us.
+                    <li>At Mission Possible we vaccinate, neuter, medicate and find homes and loving families for them to be adopted.</li>
+                </ul>
+                <br>             <br>                                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121012.5765618183!2d74.01505626712576!3d18.590126100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3bf9588f219%3A0xd1cfbd0e19df7318!2sPets%20Force!5e0!3m2!1sen!2sin!4v1646256461195!5m2!1sen!2sin"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>             <br>             <br>             <br>
+                <div class="note"> 4. RESQ CHARITABLE TRUST </div>
+
+                <div class="nonhu">
+                    <ul>
+                        <li>RESQ was founded in 2007 with an aim to minimise animal suffering and reduce human-animal conflict by providing emergency animal rescue, rehabilitation, medical aid and conducting education and awareness programs to promote peaceful
+                            coexistence between humans and animals.</li>
+                        <li>RESQ has been consistently evolving and steadily grown to cover several frontiers of animal welfare and is today one of Maharashtra's largest active citywide animal rescue NGO which has provided free medical aid, rescue and rehabilitation
+                            to over 65,000+, wildlife and domestic animals since inception.</li>
+                    </ul>
+                    <br>             <br>                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121079.81659788529!2d73.69508305820315!3d18.495239400000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2be1388afeb53%3A0xb67ad55c0f9115cc!2sRESQ%20Charitable%20Trust!5e0!3m2!1sen!2sin!4v1646256930581!5m2!1sen!2sin"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>             <br>             <br>                 <br>
+                    <div class="note"> 5. ANIMAL RESCUE TRUST </div>
+
+                    <div class="nonhu">
+                        <ul>
+                            <li>Adoption is not just getting home a pet, it is all about you giving a second chance on life to them. Rescued pets make wonderful family members as they have lacked on love and family.</li>
+
+
+                            <li>Our trust wants to ensure that any pet we place for adoption, should go to families who can give them a lifelong commitment and provide them with an appropriate, clean and safe environment to call their own, take care of them
+                                if they fall sick, where they can rely and trust, and above all give them unconditional love.</li>
+                            If you plan to adopt from our shelter, we urge you to ask all the questions and doubts that you have. </ul>
+                        <br>                 <br>                   <br>                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121055.73313281244!2d73.92628555820309!3d18.529278999999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c5df9ea7b9%3A0x67e7fe1c605bba8f!2sAnimal%20Rescue%20Trust!5e0!3m2!1sen!2sin!4v1646257995951!5m2!1sen!2sin"
+                            width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                 <br>                 <br>                 <br>
+                        <div class="note"> 6. BLUE CROSS SOCIETY </div>
+
+                        <div class="nonhu">
+                            <ul>
+                                <li>As we all know, every adoption camp is held to find loving homes for stray animals. The Blue Cross Society of Pune takes initiative in organizing such camps.
+                                    <li> After almost 3 months, it held its second adoption camp on 6th May, 2012 at Law College Road.  After the pre-event meeting on the 5th  of may 2012, where the volunteers discussed the venue, the right place was decided
+                                        on.
+                                    </li> There were around 35 pups and kittens up for adoption. Most of the pups belonged to the FTII campus where they had been fostered and now brought to the camp. Apart from this, many other fosters brought their pups
+                                    and kittens for adoption.</ul>
+                            <br>                     <br>                     <br>                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121055.73313281244!2d73.92628555820309!3d18.529278999999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c22ca53dac55%3A0xf693099e81c70adf!2sBlue%20Cross%20Hospital!5e0!3m2!1sen!2sin!4v1646258631159!5m2!1sen!2sin"
+                                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                     <br>                     <br>                     <br>
+                            <div class="note"> 7. JEEVRAKSHA ANIMAL CENTER </div>
+
+                            <div class="nonhu">
+                                <ul>
+                                    <li> goal is to reach out much further and do much much more as a devoted team for these poor helpless Creatures who are suffering at the hands of some Rogue Masters and Man.</li> For years we have struggled on our own,
+                                    rescued and helped hundreds of Animals in trouble.
+                                    <li> We have never turned our back on them and God willing as a team we hope to do so much more. We will need your help and support to do much more and to save as many lives as possible</ul>
+                                <br>                     <br>                     <br>                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121055.73313281244!2d73.92628555820309!3d18.529278999999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1ce457a9307%3A0x33f27e56819735e5!2sMission%20Possible%20Pet%20House!5e0!3m2!1sen!2sin!4v1646258923155!5m2!1sen!2sin"
+                                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                     <br>                     <br>                     <br>
+                                <div class="note"> 8. ZARIYA FOR STRAYS </div>
+
+                                <div class="nonhu">
+                                    <ul>
+                                        <li>The landscape that surrounds us and the amazing wildlife that thrives in it has vastly changed over the last decade - the growth in urban development, shifts in agricultural patterns, and climatic changes has led
+                                            to an increasing number of wildlife coming into conflict which gets reported to us on our 24-hour animal emergency helpline by the local community and the Forest Department.</li>
+                                        <li>The number of animals we are able to help largely depends on the resources (your generous donations!) that are available for us to allocate to resque animals and projects.</li>
+                                        <li> Our team isn't afraid to get hands (or feet!) dirty or their body in the case of an animal-stuck-in-drain.</li> Whether it's rescuing an animal or spending hours at night patrolling, we're out on the frontlines
+                                        of the field. We are creating better outcomes for animals, for people, and for the places we call home.</ul>
+                                    <br>                     <br>                     <br>                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203575.72568851724!2d73.92374886465846!3d18.541818198825844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c32949e67cdd%3A0x5148957fcd05521f!2sZariya%20For%20Strays!5e0!3m2!1sen!2sin!4v1646259615180!5m2!1sen!2sin"
+                                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>                     <br>                     <br>                     <br> AND MORE...
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                                <hr>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="FAQ.html">FAQ</a>
+        <a href="Contact us.html">Contact Us</a>
+        <a href="#">Terms of use</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="#">&copy; 2022 | VishwaPetCare</a>
+    </footer>
+</body>
+<script src="navbar.js"></script>
+
+</html>

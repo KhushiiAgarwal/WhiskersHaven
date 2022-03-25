@@ -108,59 +108,59 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-window.onscroll = function() {
+// window.onscroll = function() {
 
-    myID1 = document.getElementById("message1");
+//     myID1 = document.getElementById("message1");
 
-    var myScrollFunc = function() {
-        var y = document.documentElement.scrollTop;
-        if (y >= 550) {
-            myID1.className = "show"
-        } else {
-            myID1.className = "hide";
-        }
-    };
-    window.addEventListener("scroll", myScrollFunc);
-
-
-    myID2 = document.getElementById("message2");
-
-    var myScrollFunc2 = function() {
-        var y2 = window.scrollY;
-        if (y2 >= 1050) {
-            myID2.className = "show"
-        } else {
-            myID2.className = "hide";
-        }
-    };
-    window.addEventListener("scroll", myScrollFunc2);
+//     var myScrollFunc = function() {
+//         var y = document.documentElement.scrollTop;
+//         if (y >= 550) {
+//             myID1.className = "show"
+//         } else {
+//             myID1.className = "hide";
+//         }
+//     };
+//     window.addEventListener("scroll", myScrollFunc);
 
 
-    myID3 = document.getElementById("message3");
+// myID2 = document.getElementById("message2");
 
-    var myScrollFunc3 = function() {
-        var y3 = window.scrollY;
-        if (y3 >= 1850) {
-            myID3.className = "show"
-        } else {
-            myID3.className = "hide";
-        }
-    };
-    window.addEventListener("scroll", myScrollFunc3);
+// var myScrollFunc2 = function() {
+//     var y2 = window.scrollY;
+//     if (y2 >= 1050) {
+//         myID2.className = "show"
+//     } else {
+//         myID2.className = "hide";
+//     }
+// };
+// window.addEventListener("scroll", myScrollFunc2);
 
 
-    myID4 = document.getElementById("message4");
+// myID3 = document.getElementById("message3");
 
-    var myScrollFunc4 = function() {
-        var y4 = window.scrollY;
-        if (y4 >= 2450) {
-            myID4.className = "show"
-        } else {
-            myID4.className = "hide";
-        }
-    };
-    window.addEventListener("scroll", myScrollFunc4);
-};
+// var myScrollFunc3 = function() {
+//     var y3 = window.scrollY;
+//     if (y3 >= 1850) {
+//         myID3.className = "show"
+//     } else {
+//         myID3.className = "hide";
+//     }
+// };
+// window.addEventListener("scroll", myScrollFunc3);
+
+
+// myID4 = document.getElementById("message4");
+
+//     var myScrollFunc4 = function() {
+//         var y4 = window.scrollY;
+//         if (y4 >= 2450) {
+//             myID4.className = "show"
+//         } else {
+//             myID4.className = "hide";
+//         }
+//     };
+//     window.addEventListener("scroll", myScrollFunc4);
+// };
 
 function vh(v) {
     var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -179,26 +179,3 @@ function vmin(v) {
 function vmax(v) {
     return Math.max(vh(v), vw(v));
 }
-// console.info(vh(100), Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
-// console.info(vw(100), Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
-// console.info(vmin(100));
-// console.info(vmax(100));
-
-// window.onscroll = function() {
-
-//     myID1 = document.getElementById("message1");
-
-//     if (vmin(100) >= 800) {
-//         myID1.className = "show"
-//     } else {
-//         myID1.className = "hide";
-//     }
-// };
-
-function getYPosition() {
-    var top = window.pageYOffset || document.documentElement.scrollTop
-    console.log(top);
-    return top;
-}
-
-getYPosition();

@@ -6,7 +6,7 @@
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 ?>
 
-<?php
+    <?php
    include("config.php");
    session_start();
    
@@ -23,6 +23,7 @@
       
       if($count == 1) {
          session_register("myusername");
+         $_SESSION['loggedin'] = true;
          $_SESSION['login_user'] = $myusername;
          
         //header("location: welcome.php");
@@ -31,38 +32,97 @@
       }
    }
 ?>
+        <!DOCTYPE html>
+        <html lang="en">
 
-<html>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login</title>
+            <script type="text/JavaScript">
+                function Con() { confirm("You're about to be directed to another pg. Do you want to continue?"); }
+            </script>
+            <link rel="stylesheet" href="style2.css">
+        </head>
 
-<head>
-    <title> Login </title>
-    <script type="text/JavaScript">
-        function Con() { confirm("You're about to be directed to another pg. Do you want to continue?"); }
-    </script>
-</head>
 
-
-<body style="background-image: url('https://ak.picdn.net/shutterstock/videos/17178685/thumb/1.jpg'); background-size:cover;">
-    <center>
-        <h1 style="color:Crimson;">
-            <b>
-LOGIN
-</b>
-        </h1>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdk90_VVLOTb5zDCdQmx_oGF0Gjr_2KpwtPOMif3FVscEP6eoIsEU7c2XjG23m787S-oU&usqp=CAU" align="right">
-        <form action="" method "Post">
-            <h3 style="color:Navy;">
-                &emsp; &emsp;Username <input type="text" name="user" placeholder="User-ID/Email-ID/Ph No" required/>
-                <br><br> &emsp; &emsp;Password&nbsp <input type="password" name="pass" placeholder="Password" required/>
-                <br><br> &emsp; <input type="reset" name="rest" /> &emsp; <input type="submit" onclick="Con();" name="sub" />
-                <h2 style="color:Tomato;">
-                    <marquee>
-                        New to page? Sign Up here
-                    </marquee>
-                </h2>
-    </center>
-    </h3>
-    <strong>
+        <body style="background-image: url('https://ak.picdn.net/shutterstock/videos/17178685/thumb/1.jpg'); background-size:cover;">
+            <header>
+                <div class="bar">
+                    <div id="name" class="top-left">
+                        <a href="index.html">Whisker's Haven <br>
+                                <div id="subname" class="hidden"> You Are Here , Because You Care </div>
+                            </a>
+                        <div id="home">
+                            <div class="hidden">
+                                <a href="index.html"> Home </a>
+                            </div>
+                            <div class="dropdown">
+                                <a class="dropbtn hidden">Pet Care</a>
+                                <div class="dropdown-content">
+                                    <a href="petCare.html">Pet Diets</a>
+                                    <a href="accessories.html">Accessories</a>
+                                    <a href="disease.html">Diseases</a>
+                                    <a href="vaccine.html">Vaccines</a>
+                                    <a href="mapintegration.html">Nearby Hospitals</a>
+                                </div>
+                            </div>
+                            <div class="hidden">
+                                <a href="volunteers.html">Shelter & Rescue</a>
+                            </div>
+                            <div class="hidden">
+                                <a href="Rehome.html">Rehome A Pet</a>
+                            </div>
+                            <div class="hidden">
+                                <a href="adopt.html">Adopt A Pet</a>
+                            </div>
+                            <div class="hidden">
+                                <a href="login.html">Login</a>
+                            </div>
+                            <div class="dropdown1 navbar">
+                                <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg"
+                                        alt=""></button>
+                                <div id="myDropdown1" class="dropdown-content1">
+                                    <a href=" index.html">Home</a>
+                                    <div class="dropdown">
+                                        <a class="dropbtn hidden">Pet Care</a>
+                                        <div class="dropdown-content">
+                                            <a href=" petCare.html">Pet Diets</a>
+                                            <a href=" accessories.html">Accessories</a>
+                                            <a href=" disease.html">Diseases</a>
+                                            <a href=" vaccine.html">Vaccines</a>
+                                            <a href="mapintegration.html">Nearby Hospitals</a>
+                                        </div>
+                                    </div>
+                                    <a href="volunteers.html">Shelter & Rescue</a>
+                                    <a href="Rehome.html">Rehome A Pet</a>
+                                    <a href="adopt.html">Adopt A Pet</a>
+                                    <a href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <center>
+                <h1 style="color:Crimson;">
+                    <b>LOGIN</b>
+                </h1>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdk90_VVLOTb5zDCdQmx_oGF0Gjr_2KpwtPOMif3FVscEP6eoIsEU7c2XjG23m787S-oU&usqp=CAU" align="right">
+                <form action="" method "Post">
+                    <h3 style="color:Navy;">
+                        &emsp; &emsp;Username <input type="text" name="user" placeholder="User-ID/Email-ID/Ph No" required/>
+                        <br><br> &emsp; &emsp;Password&nbsp <input type="password" name="pass" placeholder="Password" required/>
+                        <br><br> &emsp; <input type="reset" name="rest" /> &emsp; <input type="submit" onclick="Con();" name="sub" />
+                        <h2 style="color:Tomato;">
+                            <marquee>
+                                <a href="signup.html"> New to page? Sign Up here </a>
+                            </marquee>
+                        </h2>
+            </center>
+            </h3>
+            <strong>
 <h5>
 <ul type=circle style="color:Dodgerblue;">
 <li>Username can contain special characters like "_","." & alphanumeric values only</li>
@@ -73,7 +133,6 @@ LOGIN
 </h5>
 </strong>
 
+        </body>
 
-</body>
-
-</html>
+        </html>

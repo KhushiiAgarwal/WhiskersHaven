@@ -534,16 +534,20 @@
         align-items: center;
         align-content: space-between;
         justify-content: space-around;
+        margin: 10vh 0vh;
     }
     
     .box {
-        height: 200px;
-        width: 200px;
-        border: 2px solid #333;
+        /* height: 30vh; */
+        width: 25vw;
+        font-size: 2.5vh;
+        line-height: 4vh;
+        padding-bottom: 2vh;
+        border: 2px solid #fefefe;
         border-radius: 23px;
         text-align: center;
-        background-color: #A9C9FF;
-        background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);
+        background-color: #dedede;
+        margin: 23px;
     }
     
     .box a {
@@ -553,7 +557,7 @@
     }
     
     .img15 {
-        width: 200px;
+        width: 25vw;
         border-radius: 23px;
         object-fit: fill;
         margin-bottom: 10px;
@@ -571,7 +575,9 @@
     }
     
     .subinfo2 table {
-        width: 20vw;
+        /* width: 40vw; */
+        line-height: 5vh;
+        text-align: center;
         margin: auto;
         row-gap: 23px;
     }
