@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
+    <link rel="stylesheet" href="stylemain2.css">
+    <title>About Pet Adoption</title>
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <div id="name" class="top-left">
+                <a href="index.html">Whisker's Haven <br>
+                    <div id="subname" class="hidden"> You Are Here , Because You Care </div>
+                </a>
+                <div id="home">
+                    <div class="hidden">
+                        <a href="index.html"> Home </a>
+                    </div>
+                    <div class="hidden">
+                        <a href="petadoption.html">About Pet Adoption </a>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropbtn hidden">Pet Care</a>
+                        <div class="dropdown-content">
+                            <a href="petCare.html">Pet Diets</a>
+                            <a href="accessories.html">Accessories</a>
+                            <a href="disease.html">Diseases</a>
+                            <a href="vaccine.html">Vaccines</a>
+                            <a href="mapintegration.html">Nearby Hospitals</a>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <a href="volunteers.html">Shelter & Rescue</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="Rehome.html">Rehome A Pet</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="adopt.html">Adopt A Pet</a>
+                    </div>
+                    <div class="hidden">
+                        <a href="login.html">Login</a>
+                    </div>
+                    <div class="dropdown1 navbar">
+                        <button onclick="myFunction1()" class="dropbtn1"><img class="navbarIcon" src=" navbarIcon.jpg"
+                                alt=""></button>
+                        <div id="myDropdown1" class="dropdown-content1">
+                            <a href=" index.html">Home</a>
+                            <a href="petadoption.html">About Pet Adoption </a>
+                            <div class="dropdown">
+                                <a class="dropbtn hidden">Pet Care</a>
+                                <div class="dropdown-content">
+                                    <a href=" petCare.html">Pet Diets</a>
+                                    <a href=" accessories.html">Accessories</a>
+                                    <a href=" disease.html">Diseases</a>
+                                    <a href=" vaccine.html">Vaccines</a>
+                                    <a href="mapintegration.html">Nearby Hospitals</a>
+                                </div>
+                            </div>
+                            <a href="volunteers.html">Shelter & Rescue</a>
+                            <a href="Rehome.html">Rehome A Pet</a>
+                            <a href="adopt.html">Adopt A Pet</a>
+                            <a href="login.html">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="rotate">
+        <img class="rotimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAUgAAACaCAMAAAD8SyGRAAAAdVBMVEUhISH///8/Pz8AAAAdHR0eHh4NDQ02NjYyMjJJSUmurq4aGhqVlZUXFxcvLy9jY2M8PDy4uLhPT08mJiZERERSUlIlJSUrKytbW1vV1dUTExOOjo5+fn63t7d1dXXh4eGampru7u5ra2vr6+vDw8OkpKSHh4fdMGIKAAAEhUlEQVR4nO3dD3eaOhjHcYTnAWIKpkkAdXVr1+2+/5d4n4DWPz2TbCf3ttPf5xyd0sjs1wDas7IsAwAAAAAAAAAAAAAAAAAAAAAAgE+GP/oJ3Ahui49+CrehfN4VdLFMNxEwk8+VD4vNtjlfZFcRnP6gZ/w5UfFlsXgx5cmi7dMixgv2rm90UdSrx1Dl+8mOslgudo9zdpuFwpScNIVavh7m13PxNr8kZDHvC0JOuOg2p1vqDz6UlJB6dquVXStCBtvmx/ku71uNkH+gVC/nHR+P74EQMl65mvJtds8P48x8OO4iETLethsrft0WRRne/ixWp59uEDKWdmGfuC62IZcUeT17G4mQ0Qo5XP8s9p9myudNcf7BBiEjlfLJ5eltWyZfXnzURsg4XLycdJSSlwMQMo58lF5e/ckZQsYpNq/F1U4IGYWzxWp7dQRCRtl+/TbzI3GEjFIu/7k+IREyTvHYz1RCyCjlczkzAiGj6O/NzAiEjNPORULIRBAyEYRMBCGv4XghJF0se7e+uw1p8mj1bvFu9HC5vnsN2eamiuWWi/rtzj5kdTkn7zfkcLm1Rm3aZBDyTJu30WNPDzaMkOcQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETAQhE0HIRBAyEYRMBCETQchEEDIRhEwEIRNByEQQMhGETOQ3Qx7PAeKGEePkIJPfDBkFIWcg5BUImQhCJoKQibT5EH1KOIS8os3jVbu4kPm7kzjcg7aO1pqfy3m7p7lfDgUqI87WV8z81jcAAAAAAAAAAAAAfAp3+X8BOZdRNtQpV8nmtKRLuepPi6vOK6ur/NeTaPYEiO+QpdM7dzE/uapI+7o2zNkg3z67njLuw7m5aBg3UbbHwZks4uFty+WMendsRkM/DdKKMnJyi8cxWRgmV27ubLN/MwnJZKraUKXyjtl75XWuvOLMeltJi2rt27zO2A/cqVyvZVg7zTOyWinfcZiAPN5uwwptriyx9cpU8vKY2hJZ72stS/ztluTK9FVHtdF2qwfPpLdWW62JFMtNmU1yj6aQtG54vIRwMod75ZSmQYUJKCFtGyYndQ3rdeOdPLoJDRur84rCq9Vs7ezz+WvJBPLybdYmWyuZUtoo1eneql53cr+jcYfH+xkZtlg7XcJ09C6vp3k5zchxunEYoJrx0Vr1zuvQU8arsOR2DzxhH8nj/LINEZlch2+bsm66n+1DthldhGSfyTHKjCHHZVqNKwxfDO10eLTzvg9fD3+RctP6bhSHFnKd6y4ca3Kj27V2pJUzXnM4eFCnuZVNeDWwPQmZ9Vb2gJ2MrLRlbbrmENKFVdQqPFqmoWzcNFjNmeuI+g/9Xv9b7fjvz4aaWTY9R3KIqOVKhUNQuJbIta0oV6p2mTTn/UX2nZ1cOxkjE88qmdhmWqGsx7Ty0sgfzHUdRnMtD5dXQ115k3VDmHi8klI03SQ+LB8XT++GDhce5+U0hsZHna7nsI79aDqOhTNsbvjA8b9CRgAAAAAAAAAAAAAAAAAAAACAS/8CaMhRM16CG0UAAAAASUVORK5CYII="
+            alt="">
+    </div>
+    <button onclick="topFunction()" id="top"><img class="top" src="top.png"></button>
+    <div class="body2">
+
+        <h1>**WHISKER'S HAVEN**</h1>
+        <br>
+        <br>
+
+        <div class="box">
+            <div class="manual">
+                <h3>MANUAL</h3>
+
+                <ul>
+                    <li>Our website will help you to adopt a pet, your best friend.</li>
+                    <li>Pet available for adoption section (main objective of the website) will help you get know the info about available pets for adoption. Location and other details of the pet will ease your adoption process.
+                    </li>
+                    <li>Pet care section will help you to take good care of your pet. It contains accessories required, diet, common diseases. Vaccines that you should give to your pet at appropriate time are also provided in this section.</li>
+                    <li>In the accessories we have given links of few websites, if you click on that you will be redirected to that website.</li>
+                    <li>You can see pet care section without login, but to view other part of our website you need to login. If you are new to website sign in. </li>
+                    <li>In shelter and rescue section some organizations and their details are listed which are doing great work for street animals. </li>
+                    <li>You can upload details of animals in Rehome a pet section. These animals can be one you found on the street or your own pets of whom you are unable to take care</li>
+                    <li>We have also provided hospitals in different areas in Pune district using map integration, you will be able to find pet hospital nearby you, which will help you treat your pet without delay.</li>
+                    <li>In about pet adoption we have given importance of pet adoption and difference between buying and adopting a pet, it will help you to take decision about pets.</li>
+                    <li>In footer section you will fine FAQ, contact us, terms of use, about us.FAQ will help you solve basic queries related to our website.</li>
+                    <li>Still if you have any query you can visit contact us, from there you can easily contact us. Also we have given our information in this page. You can visit about us page to know more about pets life and the reason we created this website.
+                    </li>
+                </ul>
+
+            </div>
+            <div class="importance">
+                <h3>WHY ADOPT?</h3>
+                <details>
+                    <summary> You Can’t Buy Happiness, It Comes To You</summary>
+                    <p>It is a common saying that money can’t buy happiness. Adoption is the best justification to exist. Adopting them for who they are is always far better than buying them for showing off one’s status.
+                    </p>
+                </details>
+                <details>
+                    <summary>You Will Indirectly NOT Be Supporting Animal Cruelty</summary>
+                    <p> Any small amount of addition to good cause can make you a part of it. So take proud for standing against animal cruelty as you help them giving your warmth after the hell they’ve gone through.</p>
+                </details>
+                <details>
+                    <summary>You Get To Pick Your Own Companion</summary>
+                    <p> Often people complain if their surrounding were different would have made a drastic change in their lives. So, hey, this is your chance to choose who you want to spend your time with. </p>
+                </details>
+                <details>
+                    <summary>You’ll Find A Permanent Best Friend</summary>
+                    <p>In present times it’s hard to find a friend. So give pets your heart and they will treasure them for life. They brighten up your world just by existing so, you live less stressful life because at the end the one who matters you will
+                        love you unconditionally.</p>
+                </details>
+                <details>
+                    <summary>Kindness Makes You A Better Person</summary>
+                    <p>Adoption is an act of kindness. It means you are a warm person and knowing that you saved someone’s will get you overwhelmed with good thoughts and make you grow as an individual. </p>
+                </details>
+
+            </div>
+            <section>
+                <div class="difference">
+                    <h3>What differs us from one buying pets?</h3>
+                    <h4>Buying a pet</h4>
+                    <p>Buying a pet from a breeder can be a good way to add a pet to your family. You know how the pet will look as you will know about their parents beforehand. Buying a pet from a breeder will also mean that the pet will come socialized
+                        and will be comfortable in your house. The pet comes with no previous experience so you can mould them the way you prefer. Good breeders also provide genetic testing of the pet which ensures that they will not develop any inherited
+                        diseases later. But for buying a pet you will have to complete some legal procedure unlike adoption of pet.</p>
+                    <h4>Adopting a pet</h4>
+                    <p>Adopting not only gets a you a great companion, but you also save the life of the rescued pet by adopting it. Most shelter pets are adults and have their vaccinations up to date. Adopting is much cheaper compared to buying pets from
+                        a breeder. Most of the pets in the shelter home have already had their basic training saving you the time to train them again. The shelter homes can also take the pet back if you find that it is not a good match for you. You need
+                        to show more patience with adopted pets to bring them out of their shell and get them to gel with you.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <a href="faq.html">FAQ</a>
+            <a href="Contact us.html">Contact Us</a>
+            <a href="#">Terms of use</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="#">&copy; 2022 | Whisker's Haven</a>
+        </footer>
+    </div>
+</body>
+<script src="navbar.js"></script>
+
+</html>
